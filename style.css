@@ -1,0 +1,298 @@
+/* General Styles */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default padding */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Choose a good font */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark gray text color */
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  a {
+    color: #0077cc; /* Blue link color */
+    text-decoration: none; /* Remove link underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 1rem; /* Space below headings */
+  }
+  
+  ul {
+    list-style: none; /* Remove default bullet points from lists */
+  }
+  
+  
+/* Responsive Design (Desktop) */
+@media only screen and (min-width: 1024px) {
+    /* Header Styles */
+    header {
+        display: flex;
+        color: #fff; /* White text color in header */
+        padding: 3rem 5rem; /* Add padding */
+        box-shadow: none; /* Subtle shadow */
+        position: absolute;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    header img {
+        position: relative;
+        max-width: 15%;
+        top: -.5vw;
+    }
+
+    header h1 {
+        margin-top: 1rem;
+    }
+    
+    a {
+        font-size: 1.2vw;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex; /* Arrange list items horizontally */
+        justify-content: center; /* Center the items */
+    }
+    
+    nav li {
+        margin: 0 1rem; /* Space between list items */
+    }
+    
+    /* Main Styles */
+    main {
+        position: relative; /* Needed for absolute positioning of the video */
+        overflow: hidden; /* Hide any overflow from the video */
+        width: 100%;
+        min-height: 100vh; /* Ensure main takes up at least full viewport height */
+    }
+
+    .video-element {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crop or stretch the video to cover the container */
+        object-position: center; /* Center the video */
+    }
+    
+    article {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    section{
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Aside Styles */
+    aside {
+        padding: 1rem;
+        background-color: #eee; /* Light gray background */
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Footer Styles */
+    footer {
+        background: #333; /* Dark background */
+        color: #fff; /* White text */
+        text-align: center; /* Center text */
+        padding: 1rem; /* Add padding */
+    }
+    footer a{
+        color: #fff;
+    }
+} 
+
+/* Responsive Design (Tablet) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Header Styles */
+    header {
+        display: flex;
+        color: #fff; /* White text color in header */
+        padding: 1.5rem 3rem; /* Add padding */
+        box-shadow: none; /* Subtle shadow */
+        position: absolute;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    header img {
+        position: relative;
+        max-width: 15%;
+        top: -.2vw;
+    }
+
+    header h1 {
+        margin-top: 1rem;
+    }
+    
+    a {
+        font-size: 1.5vw;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex; /* Arrange list items horizontally */
+        justify-content: center; /* Center the items */
+    }
+    
+    nav li {
+        margin: 0 .8rem; /* Space between list items */
+    }
+    
+    /* Main Styles */
+    main {
+        position: relative; /* Needed for absolute positioning of the video */
+        overflow: hidden; /* Hide any overflow from the video */
+        width: 100%;
+        min-height: 100vh; /* Ensure main takes up at least full viewport height */
+    }
+
+    .video-element {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crop or stretch the video to cover the container */
+        object-position: center; /* Center the video */
+    }
+    
+    article {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    section{
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Aside Styles */
+    aside {
+        padding: 1rem;
+        background-color: #eee; /* Light gray background */
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Footer Styles */
+    footer {
+        background: #333; /* Dark background */
+        color: #fff; /* White text */
+        text-align: center; /* Center text */
+        padding: 1rem; /* Add padding */
+    }
+    footer a{
+        color: #fff;
+    }
+}
+
+/* Responsive Design (Phone) */
+@media only screen and (max-width: 767px) {
+    /* Header Styles */
+    header {
+        display: flex;
+        color: #fff; /* White text color in header */
+        padding: 2rem 0; /* Add padding */
+        box-shadow: none; /* Subtle shadow */
+        position: absolute;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    header img {
+        max-width: 15%;
+    }
+
+    header h1 {
+        margin-top: 1rem;
+    }
+    
+    nav ul {
+        display: flex; /* Arrange list items horizontally */
+        justify-content: right; /* Center the items */
+        align-content: center;
+    }
+    
+    nav li {
+        margin: 0 1rem; /* Space between list items */
+    }
+    
+    /* Main Styles */
+    main {
+        position: relative; /* Needed for absolute positioning of the video */
+        overflow: hidden; /* Hide any overflow from the video */
+        width: 100%;
+        min-height: 100vh; /* Ensure main takes up at least full viewport height */
+      }
+
+      .video-element {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crop or stretch the video to cover the container */
+        object-position: center; /* Center the video */
+      }
+    
+    article {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    section{
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Aside Styles */
+    aside {
+        padding: 1rem;
+        background-color: #eee; /* Light gray background */
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Footer Styles */
+    footer {
+        background: #333; /* Dark background */
+        color: #fff; /* White text */
+        text-align: center; /* Center text */
+        padding: 1rem; /* Add padding */
+    }
+    footer a{
+        color: #fff;
+    }
+}

@@ -12,8 +12,14 @@
 <body>
     <header>
         <img src="img/logo-desktop.svg" alt="My Website Logo">
+
         <nav>
-            <ul>
+            <div id="menu-toggle">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </div>
+            <ul id="menu-lista">
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Evaluaciones</a></li>
@@ -28,8 +34,8 @@
     <main>
         <div class="video-background">
             <video class="video-element" autoplay loop muted playsinline poster="img/video-poster.jpg">
-                <source src="video/bg-desktop.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="video/bg-desktop.webm" type="video/webm" media="(min-width: 768px)">
+                <source src="video/bg-phone.webm" type="video/webm" media="(max-width: 767px)">
             </video>
         </div>
 

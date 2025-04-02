@@ -147,11 +147,6 @@
     header h1 {
         margin-top: 1rem;
     }
-    
-    a {
-        color: #000000;
-        font-size: 1.5vw;
-    }
 
     nav {
         text-align: center;
@@ -297,13 +292,12 @@
         list-style: none;
         text-align:left;
         padding: 0 6%;
-        font-family: Poppins Regular;
-        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif; 
+        font-size: 1.2rem;
         line-height: 3em;
         height: 3em;
         color: #000;
         text-transform:none;
-        font-weight:bold;
         align-items: center;
         justify-content: space-between;
     }
@@ -333,7 +327,7 @@
 
     .fa-icon {
         position: relative;
-        top: 3px;
+        top: 1px;
         margin-right: 3%;
         color: #000;
     }

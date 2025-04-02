@@ -233,7 +233,7 @@
     background-color:none;
     }
     ._layer{
-        background:#333333;
+        background:#1b1b1b;
         margin-bottom:4px;
         border-radius:2px;
         width:28px;
@@ -360,7 +360,7 @@
     }
     
     a {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     nav {

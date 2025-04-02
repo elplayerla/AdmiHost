@@ -274,7 +274,7 @@
     background-color: rgba(255, 255, 255, 0.95);
         bottom: 0;
         height: 100%;
-        padding-top: 25%;
+        padding-top: 40%;
         left: 0;
         overflow-y: scroll;
         position: fixed;
@@ -320,16 +320,8 @@
         color:#000;
     }
 
-    .fa-regular {
-        position: relative;
-        color: #000;
-    }
-
     .fa-icon {
-        position: relative;
-        top: 1px;
-        margin-right: 3%;
-        color: #000;
+        width: 10%;
     }
 
 

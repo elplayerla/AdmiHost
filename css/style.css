@@ -387,7 +387,7 @@
         position: relative; /* Needed for absolute positioning of the video */
         overflow: hidden; /* Hide any overflow from the video */
         width: 100%;
-        min-height: 91vh; /* Ensure main takes up at least full viewport height */
+        min-height: 88vh; /* Ensure main takes up at least full viewport height */
     }
 
     #video-background {
@@ -423,7 +423,7 @@
         width: 100%;
         position: relative; 
         text-align: center; /* Centra el contenido dentro del article */
-        padding: 5% 10%;
+        padding: 5%;
         font-weight: 400
     }
 

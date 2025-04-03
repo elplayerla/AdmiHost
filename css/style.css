@@ -387,7 +387,7 @@
         position: relative; /* Needed for absolute positioning of the video */
         overflow: hidden; /* Hide any overflow from the video */
         width: 100%;
-        min-height: 100vh; /* Ensure main takes up at least full viewport height */
+        min-height: 91vh; /* Ensure main takes up at least full viewport height */
     }
 
     #video-background {
@@ -409,15 +409,21 @@
         transform: translate(-50%, -50%); /* Centra el video correctamente */
         object-fit: cover;
     }
+
+    .main-content{
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
     
     article {
-        width: 90%;
-        position: absolute; /* Permite el centrado absoluto */
-        top: 17.5%; /* Centra verticalmente */
-        left: 50%; /* Centra horizontalmente */
-        transform: translate(-50%, -50%); /* Ajusta el centro del article */
+        width: 100%;
+        position: relative; 
         text-align: center; /* Centra el contenido dentro del article */
-        padding: 5%;
+        padding: 5% 10%;
         font-weight: 400
     }
 

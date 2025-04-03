@@ -6,10 +6,12 @@
   }
   
   body {
+    position: relative; /* Establece el body como contenedor relativo */
+    margin: 0; /* Quita los márgenes por defecto del body */
     font-family: "Poppins", sans-serif; /* Choose a good font */
     font-weight: 400;
     line-height: 1.6; /* Improve readability */
-    color: #333; /* Dark gray text color */
+    color: black; /* Dark gray text color */
     background-color: #f4f4f4; /* Light gray background */
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -211,12 +213,8 @@
 
     body{margin:0;padding:0;}
     .hamburger{
-        position:fixed;
         background-color:transparent;
-        left:88%;
-        top:4.5%;
-        height:30px;
-        width:30px;
+        padding-top: 1.5%;
         -webkit-transform:translate3d(0, 0, 0);
         transform:translate3d(0, 0, 0);
         -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
@@ -232,7 +230,7 @@
     background-color:none;
     }
     ._layer{
-        background:#1b1b1b;
+        background: black;
         margin-bottom:4px;
         border-radius:2px;
         width:28px;
@@ -271,7 +269,7 @@
     transform: translate3d(0px, 0px, 0px);
     }
     .menuppal{
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255);
         bottom: 0;
         height: 100%;
         padding-top: 40%;
@@ -330,18 +328,16 @@
         display: flex;
         color: #fff; /* White text color in header */
         box-shadow: none; /* Subtle shadow */
-        position: absolute;
         justify-content: space-between;
-        top: 0;
-        left: 0;
+        align-items: center;
         width: 100%;
+        padding: 5%;
         z-index: 2;
     }
     
     header img {
         position: relative;
         max-width: 40%;
-        margin: 6% 5% 0;
         z-index: 1002;
     }
 
@@ -387,24 +383,46 @@
 
     /* Main Styles */
     main {
+        display: flex;
         position: relative; /* Needed for absolute positioning of the video */
         overflow: hidden; /* Hide any overflow from the video */
         width: 100%;
         min-height: 100vh; /* Ensure main takes up at least full viewport height */
     }
 
-    .video-element {
+    #video-background {
+        position: fixed; /* Fija el video al fondo */
+        top: 0;
+        left: 0;
+        width: 100vw; /* Ancho completo de la ventana gráfica */
+        height: 100vh; /* Alto completo de la ventana gráfica */
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+        z-index: -1; /* Coloca el video detrás del contenido */
+    }
+
+    #video-background video {
+        position: absolute; /* Importante para el ajuste proporcional */
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Crop or stretch the video to cover the container */
-        object-position: center; /* Center the video */
+        transform: translate(-50%, -50%); /* Centra el video correctamente */
+        object-fit: cover;
     }
     
     article {
-        background-color: #fff;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        position: absolute; /* Permite el centrado absoluto */
+        top: 17.5%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta el centro del article */
+        text-align: center; /* Centra el contenido dentro del article */
+        padding: 5%;
+        font-weight: 400
+    }
+
+    article h2{
+       font-weight: 700
     }
     
     section{

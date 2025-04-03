@@ -1,3 +1,9 @@
+// Selecciona la imagen usando su ID
+document.getElementById("logo").addEventListener("click", () => {
+    // Recarga la página
+    window.location.reload();
+});
+
 // selector
 var menu = document.querySelector('.hamburger');
 

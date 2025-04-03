@@ -440,10 +440,8 @@
         row-gap: 1vh;
     }
 
-    .btn-primary {
+    .btn{
         display: flex;
-        color: black;
-        background-color: #25D366;
         border: none;
         border-radius: 10px;
         width: 100%;
@@ -453,57 +451,53 @@
         justify-content: center;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+        text-decoration: none; /* Elimina el subrayado */ 
+    }  
+
+    .btn:hover {
+        transform: scale(1.02); /* Aumenta el tamaño del botón en un 10% */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* Estilo cuando está activo (clic sostenido) */
-    .btn-primary:active {
-        background-color: #25D366; /* Cambia a verde */
-        color: white;
+    .btn:focus {
+        transform: scale(1.02); /* Aumenta el tamaño del botón en un 10% */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
-  
-    /* Estilo cuando está enfocado (seleccionado después del clic) */
-    .btn-primary:focus {
-        outline: none; /* Elimina el borde azul predeterminado */
-        background-color: rgb(181, 181, 181); /* Cambia a gris claro */
+
+    .btn-whatsapp {
         color: black;
+        background-color: #25D366;
+    }
+    
+    .btn-whatsapp:hover {
+        background-color: #21b959;
     }
   
-
+    .btn-whatsapp:focus {
+        background-color: #21b959;
+    }
+  
     .fa-whatsapp{
         font-size: 1.8rem;
         margin-right: 3%;
     }
 
-    .btn-secondary {
-        display: flex;
+    .btn-airbnb {
         color: black;
         background-color: #FF5A5F;
-        border: none;
-        border-radius: 10px;
-        width: 100%;
-        height: 60px;
-        font-size: 1.2rem;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
     }
-
-    /* Estilo cuando está activo (clic sostenido) */
-    .btn-secondary:active {
-        background-color: #FF5A5F; /* Cambia a verde */
-        color: white;
+    
+    .btn-airbnb:hover {
+        background-color: #bf4448;
     }
   
-    /* Estilo cuando está enfocado (seleccionado después del clic) */
-    .btn-secondary:focus {
-        outline: none; /* Elimina el borde azul predeterminado */
-        background-color: rgb(181, 181, 181); /* Cambia a gris claro */
-        color: black;
+    .btn-airbnb:focus {
+        background-color: #bf4448;
     }
 
-    .btn-secondary svg{
+    .btn-airbnb svg{
         font-size: 2rem;
         color: black;
         margin-right: 2%;

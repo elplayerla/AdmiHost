@@ -214,8 +214,8 @@
         display: flex;
         position: relative; /* Needed for absolute positioning of the video */
         overflow: hidden; /* Hide any overflow from the video */
-        width: 100%;
-        min-height: 85vh; /* Ensure main takes up at least full viewport height */
+        width: 100vw;
+        height: 100vh;
     }
 
 

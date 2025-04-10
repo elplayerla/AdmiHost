@@ -218,7 +218,6 @@
         height: 100vh;
     }
 
-
     #video-background {
         position: absolute;
         top: 0;
@@ -455,29 +454,33 @@
   
 /* Responsive Design (Desktop) */
 @media only screen and (min-width: 769px) {
+    body{margin:0;padding:0;}
     /* Background Styles */
     #video-background img {
         display: none;
-      }
+    }
+
+    .hamburger{
+        display: none;
+    }
 
     /* Header Styles */
     header {
+        position: absolute;
         display: flex;
         color: #fff; /* White text color in header */
-        padding: 3rem 5rem; /* Add padding */
         box-shadow: none; /* Subtle shadow */
-        position: absolute;
         justify-content: space-between;
-        top: 0;
-        left: 0;
+        align-items: center;
         width: 100%;
+        padding: 5%;
         z-index: 2;
     }
     
     header img {
         position: relative;
-        max-width: 15%;
-        top: -.5vw;
+        max-width: 40%;
+        z-index: 1002;
     }
 
     header h1 {
@@ -485,32 +488,171 @@
     }
     
     a {
-        color: #000000;
-        font-size: 1.2vw;
+        font-size: 4.5vw;
     }
 
     nav {
+        position: relative;
         text-align: center;
     }
 
     nav ul {
         display: flex; /* Arrange list items horizontally */
         justify-content: center; /* Center the items */
+        flex-direction: column;
     }
-    
+
+    #menu-lista {
+        display: none; /* Oculto por defecto en móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 0vw;
+        left: -73vw;
+        width: 100vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgb(26, 26, 26);
+        z-index: 1;
+    }
+
+    #menu-lista.mostrar {
+        display: block; /* Visible cuando se activa la clase 'mostrar' */
+    }
+
+    #menu-lista li {
+        width: 100vw;
+        text-align: center;
+    }
+
     /* Main Styles */
     main {
+        display: flex;
         position: relative; /* Needed for absolute positioning of the video */
         overflow: hidden; /* Hide any overflow from the video */
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Ancho completo de la ventana gráfica */
+        height: 100vh; /* Alto completo de la ventana gráfica */
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+        z-index: -1; /* Coloca el video detrás del contenido */
+    }
+
+    #video-background video {
+        position: absolute; /* Importante para el ajuste proporcional */
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
         width: 100%;
-        min-height: 100vh; /* Ensure main takes up at least full viewport height */
+        height: 100%;
+        transform: translate(-50%, -50%); /* Centra el video correctamente */
+        object-fit: cover;
+    }
+
+    #video-background img {
+        position: absolute; /* Importante para el ajuste proporcional */
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%); /* Centra el video correctamente */
+        object-fit: cover;
+    }
+
+    .main-content{
+        display: flex;
+        position: relative;
+        padding: 15% 5% 8%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
     
     article {
-        background-color: #fff;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: relative; 
+        text-align: center; /* Centra el contenido dentro del article */
+        padding: 5% 3%;
+        font-weight: 400
+    }
+
+    article h2{
+       font-weight: 700
+    }
+
+    .buttons-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        row-gap: 2vh;
+    }
+
+    .btn{
+        display: flex;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        height: 60px;
+        font-size: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+        text-decoration: none; /* Elimina el subrayado */ 
+    }  
+
+    .btn:hover {
+        transform: scale(1.02); /* Aumenta el tamaño del botón en un 10% */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:focus {
+        transform: scale(1.02); /* Aumenta el tamaño del botón en un 10% */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-whatsapp {
+        color: black;
+        background-color: #25D366;
+    }
+    
+    .btn-whatsapp:hover {
+        background-color: #21b959;
+    }
+  
+    .btn-whatsapp:focus {
+        background-color: #21b959;
+    }
+  
+    .fa-whatsapp{
+        font-size: 1.8rem;
+        margin-right: 3%;
+    }
+
+    .btn-airbnb {
+        color: black;
+        background-color: #FF5A5F;
+    }
+    
+    .btn-airbnb:hover {
+        background-color: #bf4448;
+    }
+  
+    .btn-airbnb:focus {
+        background-color: #bf4448;
+    }
+
+    .btn-airbnb svg{
+        font-size: 2rem;
+        color: black;
+        margin-right: 2%;
     }
     
     section{

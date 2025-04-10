@@ -1,36 +1,28 @@
 // Selecciona la imagen usando su ID
 document.getElementById("logo").addEventListener("click", () => {
-    // Recarga la página
-    window.location.reload();
+  // Recarga la página
+  window.location.reload();
 });
 
 // selector
 var menu = document.querySelector('.hamburger');
+var body = document.querySelector('body'); // Selecciona el elemento body
 
 // method
 function toggleMenu (event) {
   this.classList.toggle('is-active');
   document.querySelector( ".menuppal" ).classList.toggle("is_active");
   event.preventDefault();
+
+  // Verifica si el menú está activo para controlar el scroll
+  if (this.classList.contains('is-active')) {
+      // Si el menú está activo, deshabilita el scroll en el body
+      body.style.overflow = 'hidden';
+  } else {
+      // Si el menú no está activo, habilita el scroll en el body
+      body.style.overflow = 'auto';
+  }
 }
 
 // event
 menu.addEventListener('click', toggleMenu, false);
-
-
-function mostrarFondoAdecuado() {
-  const desktopVideo = document.querySelector('.desktop-video');
-  const phoneGif = document.querySelector('.phone-gif');
-
-  if (window.innerWidth <= 767) {
-      desktopVideo.style.display = 'none';
-      phoneGif.style.display = 'block';
-  } else {
-      desktopVideo.style.display = 'block';
-      phoneGif.style.display = 'none';
-  }
-}
-
-// Llamar a la función al cargar la página y al redimensionar la ventana
-window.onload = mostrarFondoAdecuado;
-window.onresize = mostrarFondoAdecuado;

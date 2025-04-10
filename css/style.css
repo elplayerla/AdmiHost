@@ -36,9 +36,10 @@
   }
 
 /* Responsive Design (Phone) */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 767px) {
 
     body{margin:0;padding:0;}
+
     .hamburger{
         background-color:transparent;
         padding-top: 1.5%;
@@ -53,6 +54,7 @@
         -ms-user-select:none;
         user-select:none
     }
+
     .hamburger.is-active{
     background-color:none;
     }
@@ -69,24 +71,29 @@
         -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
         transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     }
+
     .hamburger:hover .-top{
         -webkit-transform:translateY(-100%);
         -ms-transform:translateY(-100%);
         transform:translateY(-100%);
     }
+
     .hamburger:hover .-bottom{
         -webkit-transform:translateY(50%);
         -ms-transform:translateY(100%);
         transform:translateY(100%);
-        }
+    }
+
     .hamburger.is-active .-top{
         -webkit-transform:translateY(200%) rotate(45deg) !important;
         -ms-transform:translateY(200%) rotate(45deg) !important;
         transform:translateY(200%) rotate(45deg) !important;
     }
+
     .hamburger.is-active .-mid{
         opacity:0;
     }
+
     .hamburger.is-active .-bottom{
         -webkit-transform:translateY(-200%) rotate(135deg) !important;
         -ms-transform:translateY(-200%) rotate(135deg) !important;
@@ -96,7 +103,7 @@
     .menuppal.is_active{
     transform: translate3d(0px, 0px, 0px);
     }
-    
+
     .menuppal{
     background-color: rgba(255, 255, 255);
         bottom: 0;
@@ -111,9 +118,11 @@
         width: 100%;
         z-index: 1001;
     }
+
     .menuppal ul{
         margin:0;padding:0;
     }
+    
     .menuppal ul li { 
         display: flex;
         list-style: none;
@@ -372,7 +381,7 @@
 }
 
 /* Responsive Design (Tablet) */
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Header Styles */
     header {
         display: flex;
@@ -456,7 +465,7 @@
 }
   
 /* Responsive Design (Desktop) */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
     body{margin:0;padding:0;}
     /* Background Styles */
     #video-background img {

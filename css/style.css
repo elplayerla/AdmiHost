@@ -9,6 +9,7 @@
     position: relative; /* Establece el body como contenedor relativo */
     margin: 0; /* Quita los márgenes por defecto del body */
     font-family: "Poppins", sans-serif; /* Choose a good font */
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6; /* Improve readability */
     color: black; /* Dark gray text color */
@@ -122,7 +123,7 @@
     .menuppal ul{
         margin:0;padding:0;
     }
-    
+
     .menuppal ul li { 
         display: flex;
         list-style: none;
@@ -176,7 +177,7 @@
     
     header img {
         position: relative;
-        max-width: 40%;
+        max-width: 150px;
         z-index: 1002;
     }
 
@@ -239,6 +240,10 @@
         align-items: center;
     }
 
+    .hero-gif{
+        height: 30dvh;
+    }
+
     /* Video BG Styles */
     #video-background {
         position: absolute;
@@ -274,7 +279,7 @@
         width: 100%;
         position: relative; 
         text-align: center; /* Centra el contenido dentro del article */
-        padding: 5% 3%;
+        padding: 10% 3% 0;
         font-weight: 400
     }
 
@@ -287,7 +292,7 @@
         flex-direction: column;
         width: 100%;
         justify-content: space-between;
-        row-gap: 2vh;
+        row-gap: 12px;
     }
 
     .btn{
@@ -295,8 +300,8 @@
         border: none;
         border-radius: 10px;
         width: 100%;
-        height: 60px;
-        font-size: 1.2rem;
+        height: 48px;
+        font-size: 16px;
         align-items: center;
         justify-content: center;
         cursor: pointer;
@@ -330,7 +335,7 @@
     }
   
     .fa-whatsapp{
-        font-size: 1.8rem;
+        font-size: 1.8em;
         margin-right: 3%;
     }
 

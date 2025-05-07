@@ -26,3 +26,20 @@ function toggleMenu (event) {
 
 // event
 menu.addEventListener('click', toggleMenu, false);
+
+// Lottie
+const animation = lottie.loadAnimation({
+  container: document.getElementById('lottie-container'),
+  renderer: 'svg',
+  loop: false, // importante: desactiva el loop automático
+  autoplay: true,
+  path: 'lottie/house.json' // ruta al archivo .json
+});
+
+let goingForward = true;
+
+animation.addEventListener('complete', () => {
+    goingForward = !goingForward;
+    animation.setDirection(goingForward ? 1 : -1);
+    animation.play();
+});

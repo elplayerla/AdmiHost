@@ -239,47 +239,19 @@
         justify-content: space-between;
         align-items: center;
     }
-
-    .hero-gif{
-        height: 30dvh;
-    }
-
-    /* Video BG Styles */
-    #video-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100dvw; /* Ancho completo de la ventana gráfica */
-        height: 100dvh; /* Alto completo de la ventana gráfica */
-        overflow: hidden; /* Oculta cualquier desbordamiento */
-        z-index: -1; /* Coloca el video detrás del contenido */
-    }
-
-    #video-background video {
-        position: absolute; /* Importante para el ajuste proporcional */
-        top: 50%; /* Centra verticalmente */
-        left: 50%; /* Centra horizontalmente */
-        width: 100dvw;
-        height: 10d0vh;
-        transform: translate(-50%, -50%); /* Centra el video correctamente */
-        object-fit: cover;
-    }
-
-    #video-background img {
-        position: absolute; /* Importante para el ajuste proporcional */
-        top: 50%; /* Centra verticalmente */
-        left: 50%; /* Centra horizontalmente */
-        width: 100dvw;
-        height: 100dvh;
-        transform: translate(-50%, -50%); /* Centra el video correctamente */
-        object-fit: cover;
+    
+    #lottie-container {
+        width: 150%;
+        height: 150%;    
+        padding-right: 7%;
+        margin-top: -15%;
     }
     
     article {
         width: 100%;
         position: relative; 
         text-align: center; /* Centra el contenido dentro del article */
-        padding: 10% 3% 0;
+        padding: 7dvh 2dvw 0;
         font-weight: 400
     }
 

@@ -47,7 +47,6 @@
     <link rel="stylesheet" href="css/odometer.min.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css.map">
 </head>
@@ -128,7 +127,19 @@
                 <p>Administración y asesoría para anfitriones de Airbnb. Desde la creación del anuncio hasta la gestión diaria. </p>
             </article>  
 
-            <div id="lottie-container"></div>
+            <canvas id="canvas3d"></canvas>
+
+            <script type="module">
+                import { Application } from 'https://unpkg.com/@splinetool/runtime/build/runtime.js';
+
+                const canvas = document.getElementById('canvas3d');
+                const app = new Application(canvas);
+
+                // Carga tu archivo .splinecode (debe estar publicado o alojado)
+                app.load('https://prod.spline.design/VZQTfs8UGlyqrJym/scene.splinecode');
+            </script>
+
+            <!-- <div id="lottie-container"></div> -->
 
             <div class="buttons-container">
             <a href="https://wa.me/3326392314?text=Hola, estoy interesado en el servicio de Administración Airbnb" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i>Contáctame</a>
@@ -152,6 +163,7 @@
     </footer>
 
     <!-- JS FILES --> 
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.91/build/spline-viewer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
     <script src="js/jquery.min.js"></script> 
     <script src="js/bootstrap.min.js"></script> 

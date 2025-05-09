@@ -41,6 +41,7 @@
 
     body{margin:0;padding:0;}
 
+    /* Menú */
     .hamburger{
         display: flex;
         flex-direction: column;
@@ -171,7 +172,7 @@
     }
 
 
-    /* Header Styles */
+    /* Header */
     header {
         position: absolute;
         display: flex;
@@ -249,6 +250,12 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    #canvas3d {
+        width: 100vw;
+        height: 100vw;
+        display: block;
+    }
     
     #lottie-container {
         width: 150%;
@@ -266,7 +273,9 @@
     }
 
     article h2{
-       font-weight: 700
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
     }
 
     .buttons-container{

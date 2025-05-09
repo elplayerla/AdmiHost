@@ -244,7 +244,7 @@
     .main-content{
         display: flex;
         position: relative;
-        padding: 15% 5% 5%;
+        padding: 18% 5% 5%;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -270,7 +270,7 @@
         width: 100%;
         position: relative; 
         text-align: center; /* Centra el contenido dentro del article */
-        padding: 5dvh 2dvw 0;
+        padding: 2dvh 2dvw 0;
         font-weight: 400
     }
 

@@ -270,8 +270,8 @@
         width: 100%;
         position: relative; 
         text-align: center; /* Centra el contenido dentro del article */
-        padding: 2dvh 2dvw 0;
-        font-weight: 400
+        padding-top: 3dvh;
+        font-weight: 400;
     }
 
     article h2{

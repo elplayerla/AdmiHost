@@ -43,3 +43,21 @@ animation.addEventListener('complete', () => {
     animation.setDirection(goingForward ? 1 : -1);
     animation.play();
 });
+
+
+// Rotación Modelo 3D
+const viewer = document.getElementById('modelo3d');
+
+  function rotacionPersonalizada(velocidad = .1) { // ← Aumenta este valor para mayor velocidad
+    function rotar() {
+      const theta = (performance.now() / 1000 * velocidad * 360) % 360;
+      const distancia = viewer.cameraOrbit.split(' ')[2];
+      viewer.cameraOrbit = `${theta}deg 90deg ${distancia}`;
+      requestAnimationFrame(rotar);
+    }
+    rotar();
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    rotacionPersonalizada(.1); // ← Puedes subir a 2, 3, etc.
+  });

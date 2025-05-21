@@ -1,0 +1,184 @@
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    /* ------------------------------------------------------------------------------- HEADER -------------------------------------------------------------------------------------- */
+    header {
+        padding: 3%; 
+    }
+    
+    header #logo {
+        position: relative;
+        width: 18%;
+        top: -3px;
+        z-index: 1002;
+    }
+    
+   .hamburger {
+    display: none !important; /* Oculta botón hamburguesa */
+  }
+
+  .menuppal {
+    position: static;
+    transform: none;
+    height: auto;
+    padding-top: 0;
+    overflow: visible;
+    display: block !important;
+  }
+
+  .menuppal ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuppal ul li {
+    line-height: initial;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-content: flex-start;
+  }
+
+  .menuppal ul li a {
+    font-size: 5dw;
+    color: var(--color-font);
+  }
+
+  .menuppal ul li i.fa-angle-right {
+    display: none; /* Oculta flechas si no son necesarias */
+  }
+
+  .fa-regular{
+    display: none;
+  }
+    
+    /* --------------------------------------------------------------------------------- MAIN -------------------------------------------------------------------------------------- */
+
+
+    /* Main Styles */
+    main {
+        display: flex;
+        position: relative; /* Needed for absolute positioning of the video */
+        overflow: hidden; /* Hide any overflow from the video */
+    }
+
+    /* --------------------------------------------------------------------------------- HERO -------------------------------------------------------------------------------------- */
+
+    .hero-section{
+        width: 100%;
+        height: 500px;
+        padding: 5%;
+        padding-right: 2%;
+        flex-direction: row;
+    }
+
+    #info-buttons-container{
+        width: 60%;
+        margin-right: 5%;
+    }
+    
+    .info-container {
+        position: relative; 
+        text-align: center; /* Centra el contenido dentro del article */
+        font-weight: 400;
+        margin-bottom: 10%;
+    }
+
+    .info-container h2{
+        font-size: 3.5dvw;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .info-container p{
+        font-size: 2dvw;
+    }
+
+    .info-container svg{
+        position: relative;
+        width: 4.5dvw;
+        top: .5rem;
+    }
+
+    /* Modelo 3D Animación */
+    model-viewer {
+        width: 100%;
+        height: 100%; /* O ajusta a lo que necesites */
+    }
+
+    #buttons-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 12px;
+    }
+
+    .btn{
+        font-size: 2.2dvw;
+    }
+   
+    .btn-whatsapp {
+        color: black;
+        background-color: #25D366;
+    }
+    
+    .btn-whatsapp:hover {
+        background-color: #21b959;
+    }
+  
+    .btn-whatsapp:focus {
+        background-color: #21b959;
+    }
+  
+    .fa-whatsapp{
+        font-size: 3dvw;
+        margin-right: 3%;
+    }
+
+    .btn-airbnb {
+        color: black;
+        background-color: #FF5A5F;
+    }
+    
+    .btn-airbnb:hover {
+        background-color: #bf4448;
+    }
+  
+    .btn-airbnb:focus {
+        background-color: #bf4448;
+    }
+
+    .btn-airbnb svg{
+        width: 3.5dvw;
+        color: black;
+        margin-right: 2%;
+    }
+
+    /* ---------------------------------------------------------------------------- SECTION 2 -------------------------------------------------------------------------------------- */
+
+
+    #lottie-container {
+        
+    }
+    
+    /* Aside Styles */
+    aside {
+        padding: 1rem;
+        background-color: #eee; /* Light gray background */
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* ---------------------------------------------------------------------------- FOOTER -------------------------------------------------------------------------------------- */
+    
+    footer {
+        background: #333; /* Dark background */
+        color: #fff; /* White text */
+        text-align: center; /* Center text */
+        padding: 1rem; /* Add padding */
+    }
+    
+    footer a{
+        color: #fff;
+    }
+}

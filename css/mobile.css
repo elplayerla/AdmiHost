@@ -3,6 +3,13 @@
 
     /* ------------------------------------------------------------------------------- HEADER -------------------------------------------------------------------------------------- */
     header {
+        display: flex;
+        background-color: var(--color-background);
+        border-bottom: 1px solid #e4e4e4;
+        box-shadow: none; /* Subtle shadow */
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
         padding: 5%; 
     }
     
@@ -260,7 +267,7 @@
         display: flex;
         padding: 10% 0;
         flex-direction: column;
-        background: #fff;
+        background: var(--color-background);
         margin: auto;
         overflow: hidden;
         border-top: 1px solid #EBEBEB;
@@ -281,7 +288,7 @@
         text-align: center;
         font-size: 1.5rem;
         margin: 0;
-        color: #333;
+        color: var(--color-font);
     }
 
     .location {
@@ -343,15 +350,15 @@
 
     .achievement svg {
         display: block;
-        width: 48px;
-        height: 48px;
-        padding-top: 5px;
+        width: 40px;
+        height: auto;
     }
 
     .achievement h3 {
-        font-size: 1rem;
+        font-size: .9rem;
         margin: 0;
-        color: #333;
+        color: var(--color-font);
+        font-weight: 500;
     }
 
     .achievement p {
@@ -359,9 +366,99 @@
         margin-top: 0.2rem;
         color: #666;
     }
-    
-    /* ---------------------------------------------------------------------------- ? -------------------------------------------------------------------------------------- */
-    
+        
+    /* -------------------------------------------------------------------------------- SERVICES SECTION -------------------------------------------------------------------------------------- */
+
+    .services-section{
+        display: flex;
+        padding: 8% 0;
+        flex-direction: column;
+        background: var(--color-background);
+        margin: auto;
+        overflow: hidden;
+        border-top: 1px solid #EBEBEB;
+        max-width: 90%; 
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .service{
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .service img {
+        display: block;
+        width: 40px;
+        height: auto;
+        margin: 3% 0 0 3%;
+    }
+
+    .service h3 {
+        font-size: .9rem;
+        margin: 0;
+        color: var(--color-font);
+        font-weight: 500;
+    }
+
+    .service p {
+        font-size: 0.85rem;
+        margin-top: 0.2rem;
+        color: #666;
+    }
+
+    /* -------------------------------------------------------------------------------- REVIEWS SECTION -------------------------------------------------------------------------------------- */
+
+    .reviews-section{
+        display: flex;
+        padding: 8% 0;
+        flex-direction: column;
+        background: var(--color-background);
+        margin: auto;
+        overflow: hidden;
+        border-top: 1px solid #EBEBEB;
+        max-width: 90%; 
+    }
+
+    .reviews-scroller{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .review-card{
+        
+    }
+
+    .review-stars-date{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .review-photo {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+        display: block;
+        margin: 0 ;
+        object-fit: cover;
+    }
+
+    .review p {
+        font-size: 0.85rem;
+        margin-top: 0.2rem;
+        color: #666;
+    }
+
+    /* -------------------------------------------------------------------------------- ? SECTION -------------------------------------------------------------------------------------- */
+
+
     /* Aside Styles */
     aside {
         padding: 1rem;

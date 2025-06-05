@@ -19,3 +19,25 @@
         transform: scale(1.02); /* Aumenta el tamaño del botón en un 10% */
     }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .btn{
+        display: flex;
+        border: none;
+        border-radius: 99em;
+        width: 100%;
+        height: 48px;
+        font-size: 1rem;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+        text-decoration: none; /* Elimina el subrayado */ 
+    }  
+
+    .btn:hover{
+        transform: scale(1.02); /* Aumenta el tamaño del botón en un 10% */
+    }
+}

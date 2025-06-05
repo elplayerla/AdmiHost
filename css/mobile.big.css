@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 /* ------------------------------------------------------------------------------- HEADER -------------------------------------------------------------------------------------- */
     header {
         display: flex;
@@ -531,7 +531,7 @@
         object-fit: cover; /* Recorta sin estirar */
         object-position: center;
         display: block;
-}
+
     }
 
     .list-img{
@@ -981,4 +981,5 @@
         font-size: .875rem;
         color: var(--color-font-secundary);
     } 
+
 }

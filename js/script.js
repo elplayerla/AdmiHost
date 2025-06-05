@@ -89,7 +89,7 @@ function moveButtonsContainer() {
     const width = window.innerWidth;
 
     // Si el viewport es tablet o desktop (mayor o igual a 768px)
-    if (width >= 768) {
+    if (width >= 771) {
       if (!infoContainer.contains(buttons)) {
         infoContainer.appendChild(buttons);
       }

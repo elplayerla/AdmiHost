@@ -544,18 +544,6 @@
         background-repeat: no-repeat;   /* Evita que la imagen se repita */
     }
 
-    .depazonareal{
-        background-image: url("/img/list/depazonareal.webp");
-    }
-
-    .casapbvistacalifornia{
-        background-image: url("/img/list/casapbvistacalifornia.webp");
-    }
-
-    .casapavistacalifornia{
-        background-image: url("/img/list/casapavistacalifornia.webp");
-    }
-
     .list-type{
         font-size: 1rem;
         font-weight: 500;

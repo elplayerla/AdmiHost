@@ -1,7 +1,9 @@
 :root {
   --color-primary: white;
-  --color-secondary: #FF5A5F;
-  --color-font: black;
+  --color-airbnb: #FF5A5F;
+
+  --color-font-primary: black;
+  --color-font-secundary: #5c5c5c;
 
   --color-background: white;
 

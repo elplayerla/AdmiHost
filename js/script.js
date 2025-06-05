@@ -1,31 +1,65 @@
-// Selecciona la imagen usando su ID
-document.getElementById("logo").addEventListener("click", () => {
-  // Recarga la página
-  window.location.reload();
+// HEADER Y MENÚ
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menuppal');
+  const body = document.body;
+  const links = document.querySelectorAll('.menuppal a');
+  const logo = document.getElementById('logo');
+
+  // Click en el logo recarga la página
+  logo.addEventListener('click', () => {
+    window.location.reload();
+  });
+
+  // Toggle del menú
+  hamburger.addEventListener('click', (e) => {
+    e.preventDefault();
+    hamburger.classList.toggle('is-active');
+    menu.classList.toggle('is_active');
+
+    // Bloquear o restaurar scroll
+    body.style.overflow = menu.classList.contains('is_active') ? 'hidden' : 'auto';
+  });
+
+  // Links del menú: cerrar menú y hacer scroll suave
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      const targetId = link.getAttribute('href').slice(1);
+      const targetElement = document.getElementById(targetId);
+
+      // Cerrar menú
+      hamburger.classList.remove('is-active');
+      menu.classList.remove('is_active');
+      body.style.overflow = 'auto';
+
+      // Esperar a que se cierre antes de hacer scroll
+      setTimeout(() => {
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 350); // debe coincidir con la transición del menú
+    });
+  });
 });
 
-// selector
-var menu = document.querySelector('.hamburger');
-var body = document.querySelector('body'); // Selecciona el elemento body
+// Hacer que al dar clic en el <li> se dispare el enlace interno
+const menuItems = document.querySelectorAll('.menuppal li');
 
-// method
-function toggleMenu (event) {
-  this.classList.toggle('is-active');
-  document.querySelector( ".menuppal" ).classList.toggle("is_active");
-  event.preventDefault();
+menuItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    // Si se hizo clic en el <a>, dejamos que lo maneje el listener original
+    if (e.target.tagName.toLowerCase() === 'a') return;
 
-  // Verifica si el menú está activo para controlar el scroll
-  if (this.classList.contains('is-active')) {
-      // Si el menú está activo, deshabilita el scroll en el body
-      body.style.overflow = 'hidden';
-  } else {
-      // Si el menú no está activo, habilita el scroll en el body
-      body.style.overflow = 'auto';
-  }
-}
+    // Buscar el <a> dentro del <li> y disparar su click
+    const link = item.querySelector('a');
+    if (link) {
+      link.click();
+    }
+  });
+});
 
-// event
-menu.addEventListener('click', toggleMenu, false);
 
 
 // Rotación Modelo 3D
@@ -54,13 +88,13 @@ function moveButtonsContainer() {
 
     const width = window.innerWidth;
 
-    // Si el viewport es tablet o desktop (mayor o igual a 426px)
-    if (width >= 426) {
+    // Si el viewport es tablet o desktop (mayor o igual a 768px)
+    if (width >= 768) {
       if (!infoContainer.contains(buttons)) {
         infoContainer.appendChild(buttons);
       }
     } else {
-      // Si es mobile (menor a 426px), devolverlo a su lugar original
+      // Si es mobile (menor a 768px), devolverlo a su lugar original
       if (!heroContent.contains(buttons)) {
         heroContent.appendChild(buttons);
       }
@@ -70,6 +104,38 @@ function moveButtonsContainer() {
   // Ejecutar cuando la página carga y al redimensionar
   window.addEventListener('DOMContentLoaded', moveButtonsContainer);
   window.addEventListener('resize', moveButtonsContainer);
+
+
+
+// Invertir orden de reviews y mantener scroll al inicio
+window.addEventListener('DOMContentLoaded', () => {
+  const scroller = document.querySelector('.reviews-scroller');
+  const items = Array.from(scroller.children);
+  items.reverse().forEach(item => scroller.appendChild(item));
+});
+
+
+
+// FAQ SECTION
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const currentlyOpen = document.querySelector('.faq-question.active');
+      if (currentlyOpen && currentlyOpen !== q) {
+        currentlyOpen.classList.remove('active');
+        currentlyOpen.nextElementSibling.style.maxHeight = null;
+      }
+
+      q.classList.toggle('active');
+      const answer = q.nextElementSibling;
+      if (q.classList.contains('active')) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
 
 
 

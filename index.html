@@ -47,7 +47,8 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile-vertical.css">
+    <link rel="stylesheet" href="css/mobile-horizontal.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/style.css">
@@ -70,7 +71,7 @@
                 <li> 
                     <div>
                         <i class="fa-regular fa-circle-user fa-icon"></i>
-                        <a href="#">Perfil</a> 
+                        <a href="#profile-section">Perfil</a> 
                     </div>
                     <i class="fa-regular fa-angle-right"></i>
                 </li> 
@@ -78,7 +79,7 @@
                 <li> 
                     <div>
                         <i class="fa-regular fa-rectangle-list fa-icon"></i>
-                        <a href="#">Servicios</a> 
+                        <a href="#services-section">Servicios</a> 
                     </div>
                     <i class="fa-regular fa-angle-right"></i>
                 </li>
@@ -86,7 +87,7 @@
                 <li> 
                     <div>
                         <i class="fa-regular fa-star fa-icon"></i>
-                        <a href="#">Evaluaciones</a> 
+                        <a href="#reviews-section">Evaluaciones</a> 
                     </div>
                     <i class="fa-regular fa-angle-right"></i>
                 </li>
@@ -94,7 +95,7 @@
                 <li> 
                     <div>
                         <i class="fa-regular fa-house fa-icon"></i>
-                        <a href="#">Alojamientos</a> 
+                        <a href="#list-section">Alojamientos</a> 
                     </div>
                     <i class="fa-regular fa-angle-right"></i>
                 </li>
@@ -102,7 +103,7 @@
                 <li> 
                     <div>
                         <i class="fa-regular fa-circle-dollar fa-icon"></i>
-                        <a href="#">Precios</a> 
+                        <a href="#price-section">Precios</a> 
                     </div>
                     <i class="fa-regular fa-angle-right"></i>
                 </li>
@@ -118,7 +119,7 @@
                 <li> 
                     <div>
                         <i class="fa-regular fa-person fa-icon" style="padding-left: 2%;"></i>
-                        <a href="#">Sobre Mí</a> 
+                        <a href="#aboutme-section">Sobre Mí</a> 
                     </div>
                     <i class="fa-regular fa-angle-right"></i>
                 </li>
@@ -132,7 +133,7 @@
         <section class="hero-section"> 
             <div id="info-buttons-container">
                 <div class="info-container">
-                    <h2 style="font-weight: 700">Inicia tu <span style="color: #FF5A5F;">Airbnb</span><svg  xmlns="http://www.w3.org/2000/svg"  color="#FF5A5F" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-airbnb"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-2 0 -3 1 -3 3c0 1.5 1.494 3.535 3 5.5c1 1 1.5 1.5 2.5 2s2.5 1 4.5 -.5s1.5 -3.5 .5 -6s-2.333 -5.5 -5 -9.5c-.834 -1 -1.5 -1.5 -2.503 -1.5c-1 0 -1.623 .45 -2.497 1.5c-2.667 4 -4 7 -5 9.5s-1.5 4.5 .5 6s3.5 1 4.5 .5s1.5 -1 2.5 -2c1.506 -1.965 3 -4 3 -5.5c0 -2 -1 -3 -3 -3z" /></svg> existosamente</h2>
+                    <h1 style="font-weight: 700">Inicia tu <span style="color: #FF5A5F;">Airbnb</span><svg  xmlns="http://www.w3.org/2000/svg"  color="#FF5A5F" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-airbnb"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-2 0 -3 1 -3 3c0 1.5 1.494 3.535 3 5.5c1 1 1.5 1.5 2.5 2s2.5 1 4.5 -.5s1.5 -3.5 .5 -6s-2.333 -5.5 -5 -9.5c-.834 -1 -1.5 -1.5 -2.503 -1.5c-1 0 -1.623 .45 -2.497 1.5c-2.667 4 -4 7 -5 9.5s-1.5 4.5 .5 6s3.5 1 4.5 .5s1.5 -1 2.5 -2c1.506 -1.965 3 -4 3 -5.5c0 -2 -1 -3 -3 -3z" /></svg> existosamente</h1>
                     <p>Administración y asesoría para anfitriones de Airbnb. Desde la creación del anuncio hasta la gestión diaria. </p>
                 </div>  
             </div>
@@ -157,31 +158,34 @@
             </div>
         </section>
 
-        <section class="profile-section">
+        <section class="profile-section" id="profile-section">
             <img src="img/profile.webp" alt="Brayan Sánchez" class="profile-photo"/>
-            <h1>Brayan Sánchez</h1>
-            <p class="location">Presta servicios de coanfitrión en Guadalajara, México</p>
+            <h2>Brayan Sánchez</h2>
+            <p class="location">Presta servicios de coanfitrión en <br>Guadalajara, México</p>
             <p class="intro">Superanfitrión con más de 3 años de experiencia y 4 alojamientos. Ayudo a anfitriones a crear su anuncio, mejorar sus propiedades, maximizar ingresos y obtener excelentes reseñas.</p>
 
             <div class="stats">
-                <div><strong>149</strong><br>evaluaciones</div>
-
                 <div>
-                    <div class="calification-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                        <strong>4.83</strong>
-                    </div>
-                    calificación
+                    <h3>149</h3>
+                    <p>evaluaciones</p>
                 </div>
 
-                <div><strong>4</strong><br>anuncios</div>
+                <div>
+                    <h3>★ 4.83</h3>
+                    <p>calificación</p>                    
+                </div>
+
+                <div>
+                    <h3>4</h3>
+                    <p>anuncios</p>                    
+                </div>
             </div>
 
             <div class="achievements">
                 <div class="achievement">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="M25.5 25a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM13 0a12 12 0 0 1 11.83 14H22.8a10 10 0 1 0-18.02 3.7 10.97 10.97 0 0 1 4.45-3.04A5.99 5.99 0 0 1 13 4a6 6 0 0 1 3.77 10.67c.58.2 1.14.46 1.67.77-.24.4-.4.86-.43 1.35L18 17v.52a8.96 8.96 0 0 0-4-1.46v-2.19a4 4 0 1 0-2 0v2.19a8.98 8.98 0 0 0-5.9 3.17A9.97 9.97 0 0 0 18 20.66v.54a3 3 0 0 0 .5 1.47A12 12 0 1 1 13 0zm17 16a1 1 0 0 1 1 .88V21a1 1 0 0 1-.48.85l-.11.06-4.5 2a1 1 0 0 1-.7.05l-.12-.05-4.5-2a1 1 0 0 1-.58-.78L20 21v-4a1 1 0 0 1 .88-1H21zm-1 2h-7v2.35l3.5 1.55 3.5-1.55z"></path></svg>
                     <div>
-                        <h3>Superanfitrión durante más de 3 años</h3>
+                        <h5>Superanfitrión durante más de 3 años</h5>
                         <p>Obtuvo el mayor reconocimiento por ser anfitrión en Airbnb desde 2022.</p>
                     </div>
                 </div>  
@@ -189,15 +193,15 @@
                 <div class="achievement">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m26.3732689 2.47961624.6167441.48322004c1.7072543 1.33763663 2.6054782 2.90952832 2.6054782 4.67605261 0 .3660905-.0390268.72618704-.116891 1.07902433.2220822-.04940579.4535208-.09078168.6921664-.12465571l.775726-.11010878.2925061.72685288c.8097073 2.01205449.8016461 3.82246449-.0816161 5.35231939-.2032148.3519785-.4424546.6712615-.7165374.9579743l.2224321.0794128.9515555.3797252-.1101088.7757261c-.3048001 2.1473439-1.2169863 3.7111744-2.7468413 4.5944365-.5761025.332613-1.1919899.5411159-1.8434482.6285758.1841168.1929555.3637753.4031581.5393959.6273064l.48322.6167441-.48322.6167441c-1.3376366 1.7072543-2.9095283 2.6054781-4.6760526 2.6054781-1.2480882 0-2.4019214-.4496183-3.4432232-1.3171892l-.0012213.0394115c0 1.2886644 1.044669 2.3333333 2.3333334 2.3333333.5522847 0 1 .4477153 1 1s-.4477153 1-1 1c-2.3932339 0-4.3333334-1.9400994-4.3333334-4.3333333 0-.9731196.3231417-1.8972354.901435-2.6461065.0487133-.1124489.1099252-.2143841.183909-.2995515.2333023-.2685692.4731075-.5134836.719657-.7345023 1.092313-.9792012 2.3169607-1.4865064 3.6394435-1.4865064l.0684312.0004504c.3275052-1.8187509 1.1205491-3.1889128 2.3863714-4.0426116-.4569936-1.4757574-.4468151-2.8322754.0552629-4.0354282-1.4028349-1.2488618-2.1367966-2.68667211-2.1367966-4.28352171 0-1.76652429.8982238-3.33841598 2.6054781-4.67605261zm-3.5954911 19.52038376c-.8090047 0-1.5656514.3134377-2.3044395.9757225l-.1826884.1713488-.0733166.074262.1281937.1295236c.7776797.743284 1.5802193 1.0935875 2.4322508 1.0935875l.218427-.0078032c.7972463-.0573203 1.5547873-.4315014 2.2882491-1.1577185l.0555461-.056256-.0555461-.057145c-.8001401-.7922368-1.6289366-1.1655217-2.5066761-1.1655217zm3.7578827-4.4994059-.1852617.1159713c-.6617754.448264-1.1307346 1.1510849-1.4028227 2.1467382l-.0182612.0759557.0749618.0222525c1.0890601.2860271 1.9934613.1949031 2.753606-.2439667l.1852618-.1159712c.6617753-.4482641 1.1307346-1.1510849 1.4028226-2.1467383l.0193478-.0769097-.0760483-.0212985c-1.0890601-.2860271-1.9934613-.194903-2.7536061.2439667zm3.1123395-6.7679274-.0769097.0193477c-1.0861673.2968233-1.8238397.8279397-2.2627095 1.5880844l-.1024557.1930649c-.3489823.7190957-.4037025 1.5622361-.141511 2.5605412l.0222526.0749618.0759556-.0182613c1.0861673-.2968233 1.8238397-.8279397 2.2627095-1.5880844s.5299938-1.664546.2439667-2.7536061zm-3.2751755-5.65600003-.0562561.05554607c-.7922368.80014014-1.1655217 1.62893662-1.1655217 2.50667615l.0078032.21842698c.0573204.7972463.4315015 1.55478738 1.1577185 2.28824913l.0575894.0537683.0189905-.0176348c.505107-.50232394.8443631-1.01414101 1.0296433-1.53660354.1153772-.32534636.1726996-.65911739.1726996-1.00620607 0-.87773953-.3732849-1.70653601-1.1655217-2.50667615zm-20.9125938-2.59705043-.6167441.48322004c-1.70725429 1.33763663-2.60547812 2.90952832-2.60547812 4.67605261 0 .3660905.03902677.72618704.11689093 1.07902433-.22208221-.04940579-.45352077-.09078168-.69216632-.12465571l-.77572608-.11010878-.29250604.72685288c-.80970728 2.01205449-.80164608 3.82246449.08161606 5.35231939.20321486.3519785.44245466.6712615.71653743.9579743l-.2224321.0794128-.95155553.3797252.11010879.7757261c.30480015 2.1473439 1.21698637 3.7111744 2.74684128 4.5944365.57610257.332613 1.19198995.5411159 1.84344825.6285758-.18411676.1929555-.36377531.4031581-.53939589.6273064l-.48322004.6167441.48322004.6167441c1.33763662 1.7072543 2.90952832 2.6054781 4.67605261 2.6054781 1.24808813 0 2.40192143-.4496183 3.44322313-1.3171892l.0012213.0394115c0 1.2886644-1.0446689 2.3333333-2.3333333 2.3333333-.55228477 0-1.00000002.4477153-1.00000002 1s.44771525 1 1.00000002 1c2.3932339 0 4.3333333-1.9400994 4.3333333-4.3333333 0-.9731196-.3231417-1.8972354-.901435-2.6461065-.0487133-.1124489-.1099252-.2143841-.1839089-.2995515-.2333024-.2685692-.4731075-.5134836-.7196571-.7345023-1.092313-.9792012-2.3169606-1.4865064-3.63944343-1.4865064l-.06843124.0004504c-.32750516-1.8187509-1.12054908-3.1889128-2.38637136-4.0426116.45699357-1.4757574.44681506-2.8322754-.05526292-4.0354282 1.40283491-1.2488618 2.13679658-2.68667211 2.13679658-4.28352171 0-1.76652429-.89822383-3.33841598-2.60547813-4.67605261zm3.59549117 19.52038376c.8090047 0 1.56565133.3134377 2.30443953.9757225l.1826884.1713488.0733165.074262-.1281937.1295236c-.7776796.743284-1.58021923 1.0935875-2.43225073 1.0935875l-.21842698-.0078032c-.7972463-.0573203-1.55478738-.4315014-2.28824918-1.1577185l-.05554607-.056256.05554607-.057145c.80014014-.7922368 1.62893662-1.1655217 2.50667616-1.1655217zm-3.75788275-4.4994059.18526172.1159713c.66177537.448264 1.13073465 1.1510849 1.40282266 2.1467382l.01826127.0759557-.07496179.0222525c-1.08906009.2860271-1.99346135.1949031-2.75360608-.2439667l-.18526171-.1159712c-.66177538-.4482641-1.13073465-1.1510849-1.40282267-2.1467383l-.01934775-.0769097.07604828-.0212985c1.08906008-.2860271 1.99346134-.194903 2.75360607.2439667zm-3.11233948-6.7679274.07690971.0193477c1.08616726.2968233 1.82383971.8279397 2.26270948 1.5880844l.10245572.1930649c.34898228.7190957.40370248 1.5622361.14151095 2.5605412l-.02225252.0749618-.07595567-.0182613c-1.08616726-.2968233-1.8238397-.8279397-2.26270947-1.5880844s-.5299938-1.664546-.24396668-2.7536061zm3.27517551-5.65600003.05625608.05554607c.7922368.80014014 1.1655217 1.62893662 1.1655217 2.50667615l-.0078032.21842698c-.05732034.7972463-.43150144 1.55478738-1.1577185 2.28824913l-.05758942.0537683-.01899046-.0176348c-.50510698-.50232394-.84436314-1.01414101-1.02964333-1.53660354-.11537714-.32534636-.17269954-.65911739-.17269954-1.00620607 0-.87773953.3732849-1.70653601 1.1655217-2.50667615z"></path></svg>
                     <div>
-                        <h3>Coanfitrión de 3 alojamientos arriba de 4.8 de calificación</h3>
+                        <h5>Coanfitrión de 3 alojamientos arriba de 4.8 de calificación</h5>
                         <p>Ayuda a manejar algunos de los espacios más populares en Airbnb.</p>
                     </div>
                 </div>
 
                 <div class="achievement">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="height: auto; width: 30px;"><path d="M16.84 27.16v-3.4l-.26.09c-.98.32-2.03.51-3.11.55h-.7A11.34 11.34 0 0 1 1.72 13.36v-.59A11.34 11.34 0 0 1 12.77 1.72h.59c6.03.16 10.89 5.02 11.04 11.05V13.45a11.3 11.3 0 0 1-.9 4.04l-.13.3 7.91 7.9v5.6H25.7l-4.13-4.13zM10.31 7.22a3.1 3.1 0 1 1 0 6.19 3.1 3.1 0 0 1 0-6.2zm0 2.06a1.03 1.03 0 1 0 0 2.06 1.03 1.03 0 0 0 0-2.06zM22.43 25.1l4.12 4.13h2.67v-2.67l-8.37-8.37.37-.68.16-.3c.56-1.15.9-2.42.96-3.77v-.64a9.28 9.28 0 0 0-9-9h-.55a9.28 9.28 0 0 0-9 9v.54a9.28 9.28 0 0 0 13.3 8.1l.3-.16 1.52-.8v4.62z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="height: 2rem; width: 2rem;"><path d="M16.84 27.16v-3.4l-.26.09c-.98.32-2.03.51-3.11.55h-.7A11.34 11.34 0 0 1 1.72 13.36v-.59A11.34 11.34 0 0 1 12.77 1.72h.59c6.03.16 10.89 5.02 11.04 11.05V13.45a11.3 11.3 0 0 1-.9 4.04l-.13.3 7.91 7.9v5.6H25.7l-4.13-4.13zM10.31 7.22a3.1 3.1 0 1 1 0 6.19 3.1 3.1 0 0 1 0-6.2zm0 2.06a1.03 1.03 0 1 0 0 2.06 1.03 1.03 0 0 0 0-2.06zM22.43 25.1l4.12 4.13h2.67v-2.67l-8.37-8.37.37-.68.16-.3c.56-1.15.9-2.42.96-3.77v-.64a9.28 9.28 0 0 0-9-9h-.55a9.28 9.28 0 0 0-9 9v.54a9.28 9.28 0 0 0 13.3 8.1l.3-.16 1.52-.8v4.62z"></path></svg>
                     <div>
-                        <h3>Anfitrión de más de 100 estancias</h3>
+                        <h5>Anfitrión de más de 100 estancias</h5>
                         <p>Ha ayudado a ofrecer +250 estancias desde 2022.</p>
                     </div>
                 </div>
@@ -205,42 +209,42 @@
 
         </section>
             
-        <section class="services-section">
+        <section class="services-section" id="services-section">
             <div class="services">
-                <h3 style="font-weight: 500; margin-bottom: 0;">Mis servicios</h3>
+                <h3 style="margin-bottom: 0;">Mis servicios</h3>
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/7564a5e6-22c9-4595-9e17-e37a58868185.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/7564a5e6-22c9-4595-9e17-e37a58868185.png" style="--dls-liteimage-object-fit: contain;">                    <div>
-                        <h3>Configuración del anuncio</h3>
-                        <p>Optimización de anuncios de alto impacto para que destaque en las búsquedas de los huéspedes.</p>
+                        <h5>Configuración del anuncio</h5>
+                        <p>Optimizo descripciones, fotos y precios para que tu anuncio en Airbnb destaque, atraiga más huéspedes y mejores evaluaciones.</p>
                     </div>
                 </div>  
 
                 <div class="service">
                         <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/996fe3a2-5cdd-4dbc-860e-6b739634e4be.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/996fe3a2-5cdd-4dbc-860e-6b739634e4be.png" style="--dls-liteimage-object-fit: contain;">                    <div>
-                        <h3>Configuración de precios y disponibilidad</h3>
-                        <p>Administración de calendario y optimización de precios de acuerdo a la demanda y las temporadas.</p>
+                        <h5>Configuración de precios y disponibilidad</h5>
+                        <p>Ajusto precios y disponibilidad estratégicamente para maximizar reservas y ganancias, adaptando tu calendario todo el año.</p>
                     </div>
                 </div>
 
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/bb114815-a18c-4e19-bbb2-d001ad653a1e.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/bb114815-a18c-4e19-bbb2-d001ad653a1e.png" style="--dls-liteimage-object-fit: contain;">
                     <div>
-                        <h3>Administración de solicitudes de reservación</h3>
-                        <p>Administración de reservas, respuestas a consultas y aceptar o rechazar solicitudes.</p>
+                        <h5>Administración de solicitudes de reservación</h5>
+                        <p>Gestiono solicitudes, reviso perfiles y te ayudo a aceptar o rechazar solicitudes para siempre asegurar buenos huéspedes.</p>
                     </div>
                 </div>
 
                 <div class="service">
                         <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/e35f771b-798d-4139-b9c7-61ab41c3a815.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/e35f771b-798d-4139-b9c7-61ab41c3a815.png" style="--dls-liteimage-object-fit: contain;">                    <div>
-                        <h3>Comunicación con los huéspedes</h3>
-                        <p>Comunicación con los huéspedes al resolver todas sus dudas y resolución de problemas durante su estancia.</p>
+                        <h5>Comunicación con los huéspedes</h5>
+                        <p>Respondo rápidamente a mensajes, dudas y solicitudes de huéspedes, mantengo una comunicación fluida y constante.</p>
                     </div>
                 </div>
 
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/854f9050-5f4f-4182-babb-57aeb09a29e7.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/854f9050-5f4f-4182-babb-57aeb09a29e7.png" style="--dls-liteimage-object-fit: contain;">
                     <div>
-                        <h3>Asistencia presencial para huéspedes</h3>
+                        <h5>Asistencia presencial para huéspedes</h5>
                         <p>Llegada autónoma de los huéspedes mediante cajas de seguridad, cerraduras inteligentes o con teclado.</p>
                     </div>
                 </div>
@@ -248,23 +252,23 @@
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/edebf11f-e833-447c-b3e6-85bf2544a1bf.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/edebf11f-e833-447c-b3e6-85bf2544a1bf.png" style="--dls-liteimage-object-fit: contain;">
                     <div>
-                        <h3>Limpieza y mantenimiento</h3>
-                        <p>Coordinación para la prestación de los servicios de limpieza de habitaciones y áreas de estancia para alojamiento temporal.</p>
+                        <h5>Limpieza y mantenimiento</h5>
+                        <p>Coordino la limpieza para asegurar que cada alojamiento esté siempre impecable y listo para recibir a los próximos huéspedes.</p>
                     </div>
                 </div>
 
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/e1b9ab8b-d6f7-4b1d-9fcb-625df20af4f5.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/e1b9ab8b-d6f7-4b1d-9fcb-625df20af4f5.png" style="--dls-liteimage-object-fit: contain;">
                     <div>
-                        <h3>Fotografía del alojamiento</h3>
-                        <p>Sesión fotográfica profesional de interiorismo para resaltar los espacios y servicios de tu alojamiento con costo adicional.</p>
+                        <h5>Fotografía del alojamiento</h5>
+                        <p>Sesión fotográfica profesional para resaltar los espacios y servicios de tu alojamiento con costo adicional.</p>
                     </div>
                 </div>
 
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/3915b7bd-80ac-4150-9d8e-5f83b9fc4d25.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/3915b7bd-80ac-4150-9d8e-5f83b9fc4d25.png" style="--dls-liteimage-object-fit: contain;">
                     <div>
-                        <h3>Decoración y diseño de interiores</h3>
+                        <h5>Decoración y diseño de interiores</h5>
                         <p>Asesoría en la decoración, equipamiento y aspectos diferenciadores de tu alojamiento.</p>
                     </div>
                 </div>
@@ -272,40 +276,2633 @@
                 <div class="service">
                     <img aria-hidden="true" decoding="async" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/067a5e45-6198-4c33-b80e-3720a05115e0.png" data-original-uri="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-o16-chm-pdp/original/067a5e45-6198-4c33-b80e-3720a05115e0.png" style="--dls-liteimage-object-fit: contain;">
                     <div>
-                        <h3>Licencias y permisos de hospedaje</h3>
+                        <h5>Licencias y permisos de hospedaje</h5>
                         <p>Asesoría fiscal para la incorporación y buenas prácticas en el régimen de ingresos por plataformas digitales.</p>
                     </div>
                 </div>
             </div> 
         </section>
 
-        <section class="reviews-section">
-            <h3 style="font-weight: 500; margin-bottom: 0;">★ 4.82 • Mis evaluaciones</h3>
-            <div class="reviews-scroller">
-                <div class="review-card">
-                    <div class="review-stars-date">
-                        <p>★★★★★</p>   
-                        <p>•</p>
-                        <p>23/05/2025</p>  
-                    </div>
+        <section class="reviews-section" id="reviews-section">
+            <h3>★ 4.83 • 149 evaluaciones</h3>
+            <div class="reviews-scroller" id="reviews-scroller">
 
-                    <p>Optimización de anuncios de alto impacto para que destaque en las búsquedas de los huéspedes.</p>
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2022</p>   
+                        <p class="review-card-text">i love the city, coming to Guadalajara is amazing and choosing this Airbnb this time, was my best decision. Brayan was a really good host. Of course when I visit the city again, I will look to stay here</p>
+                    </div>
                     
-                    <div class="review-stars-date">
-                        <img src="img/profile.webp" alt="Brayan Sánchez" class="review-photo"/>
-                        <p>Stanley</p>
+                    <div class="review-photo-name">
+                        <img src="img/reviews/1-aztlan.najera.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Aztlan</p>
+                            <p class="review-user-city">Vancouver, Canadá</p> 
+                        </div>
                     </div>
                 </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2022</p>   
+                        <p class="review-card-text">Es un lugar muy cómodo y agradable 😁</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/2-wendy.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Wendy</p>
+                            <p class="review-user-city">Zamora, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2022</p>   
+                        <p class="review-card-text">El lugar es como se muestra en las fotos. La terraza es muy cómoda para fumar o tomar aire fresco. La habitación estaba limpia, es un lugar muy tranquilo y a un precio muy accesible. Brayan fue amable en todo momento.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/3-abraham.baltazar.jpeg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Abraham Baltazar</p>
+                            <p class="review-user-city">Ocotlán, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2022</p>   
+                        <p class="review-card-text">Instalaciones pulcras y excelente ubicación. Además muy gentil y siempre atento y dispuesto a ayudar. Super recomendado.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/4-ittiel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ittiel</p>
+                            <p class="review-user-city">Ciudad de México, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2022</p>   
+                        <p class="review-card-text">Excelente alojamiento con un anfitrión amable y atento. Todo funciona a la perfección y el lugar es muy limpio.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/5-carlos.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Carlos</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2022</p>   
+                        <p class="review-card-text">Lugar confortable, la terraza es muy agradable y el lugar bastante limpio y cuidado. Bryan es muy amable. Ampliamente recomendado.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/6-salvador.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Salvador</p>
+                            <p class="review-user-city">Celaya, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2022</p>   
+                        <p class="review-card-text">Todo lo que se anuncia por parte del anfitrión está incluído, fuera de eso la zona es tranquila</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/7-ramón.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ramón</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2022</p>   
+                        <p class="review-card-text">amable, muy comprometido</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/8-javier.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Javier</p>
+                            <p class="review-user-city">Guadalajara, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2022</p>   
+                        <p class="review-card-text">Brayan was very helpful, very informative around the area when asked what is there to do.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/9-jose.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jose</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★☆☆ • febrero de 2022</p>   
+                        <p class="review-card-text">Muy bien solamente que el baño no tiene el espacio ideal para hacer sus necesidades y la estufa tarda MUCHO en calentar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/10-daniel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Daniel</p>
+                            <p class="review-user-city">Morelia, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2022</p>   
+                        <p class="review-card-text">Todo bien. Está en una buena colonia y el cuarto cumplió con mis expectativas. Sin duda volvería a hospedarme ahí.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/11-gilberto-azeem.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Gilberto Azeem</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2022</p>   
+                        <p class="review-card-text">Muy amable, atento a lo que se necesite, y siempre disponible.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/12-Loís-André.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Loís André</p>
+                            <p class="review-user-city">Saltillo, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2022</p>   
+                        <p class="review-card-text">La atención es increíble, cualquier duda que tuve Brayan muy amablemente las respondió. Regresaría sin dudarlo.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/13-monica.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Mónica</p>
+                            <p class="review-user-city">Colima, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2022</p>   
+                        <p class="review-card-text">Es un excelente lugar si visitan Guadalajara por pocos días, está en una ubicación muy tranquila y es fácil llegar, el anfitrión es muy buena persona y la comunicación fue excelente.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/14-ignacio.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ignacio</p>
+                            <p class="review-user-city">Celaya, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2022</p>   
+                        <p class="review-card-text">Brayan fue un excelente anfitrión, fue siempre muy amable y respondió todas mis dudas. El lugar está muy limpio y es exactamente lo que se anuncia. ¡Gracias Brayan por tu hospitalidad!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/15-pilar.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Pilar</p>
+                            <p class="review-user-city">Aguascalientes, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2022</p>   
+                        <p class="review-card-text">El lugar es tal y como lo describe, muy cómodo, tranquilo, limpio y accesible. El anfitrión muy amable y atento.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/16-giovana.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Giovanna</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2022</p>   
+                        <p class="review-card-text">Muy buen anfitrión</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/17-maria.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">María Teresa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2022</p>   
+                        <p class="review-card-text">Todo excelente</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/18-humberto.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Humberto</p>
+                            <p class="review-user-city">Colima, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2022</p>   
+                        <p class="review-card-text">Excelente lugar para estancias largas, cuenta con todo lo necesario para que estés cómodo, para que sientas que tienes un pequeño hogar y en cuanto a calidad relación precio es excelente. Muy recomendado, volvería a reservar.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/19-Perfecto.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Perfecto</p>
+                            <p class="review-user-city">Monterrey, México</p> 
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2022</p>   
+                        <p class="review-card-text">Tuve una muy buena experiencia en este alojamiento no dudaría en elegirlo nuevamente. y espero sea pronto.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/20-Karla-Karina.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Karla Karina</p>
+                            <p class="review-user-city">Guadalajara, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">Limpio y ordenado</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/21-Francisco.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Francisco</p>
+                            <p class="review-user-city">Jacona, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">el cuarto es amplio, está baste limpio los servicios son básicos pero más que suficientes, definitivamente volvería</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/22-Oscar.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Oscar</p>
+                            <p class="review-user-city">Zapopan, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">Muy atento Brayan, todo excelente! Gracias!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/23-Saul.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Saul</p>
+                            <p class="review-user-city">Los Mochis, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">excelente ubicación, limpio, cómodo, lugares de comida , super mercados cerca, fácil de llegar y brayan muy atento en todo momento, super recomendable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/24-Faby.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Faby</p>
+                            <p class="review-user-city">Lagos de Moreno, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">atento y amable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/25-Juan-Carlos.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Juan Carlos</p>
+                            <p class="review-user-city">Morelia, México</p> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">Excelente atención; accesibilidad y comodidad.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/26-andrea.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Andrea</p>
+                            <p class="review-user-city">Ciudad de México, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2022</p>   
+                        <p class="review-card-text">Muy buena atención y todo muy bien. Recomendado</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/27-irving.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Irving</p>
+                            <p class="review-user-city">Hermosillo, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • junio de 2022</p>   
+                        <p class="review-card-text">Lugar muy bonito, satisfecho con mi estancia</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/28-marco.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Marco Antonio</p>
+                            <p class="review-user-city">Cabo San Lucas, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2022</p>   
+                        <p class="review-card-text">agradable cercano a los lugares que fui ,muy agusto gracias</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/29-Angelica.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Angelica</p>
+                            <p class="review-user-city">México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • julio de 2022</p>   
+                        <p class="review-card-text">Muy buena ubicación respecto a la zona metropolitana..</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/30-Omar.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Omar</p>
+                            <p class="review-user-city">Rincón de Romos, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2022</p>   
+                        <p class="review-card-text">Muy limpio todo y muy cómodo el lugar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/31-Cristian.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Cristian Lizzeth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2022</p>   
+                        <p class="review-card-text">I'm always pleased when there is a secure place to part. Brayan has a garage and kitchen not in the unit, but outside the room in the shade which is even better. And a clean bathroom with a hot shower. For me, this is the perfect place to stay.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/32-Fran.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Fran</p>
+                            <p class="review-user-city">San Cristóbal, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2022</p>   
+                        <p class="review-card-text">Alojamiento muy cómodo, limpio y de fácil acceso, la ubicación muy buena y no es afectada cuando llueve, buena relación entre lo que ofrecen y el precio. El anfitrión súper amable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/33-Robert.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Robert Giovanni</p>
+                            <p class="review-user-city">Villahermosa, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2022</p>   
+                        <p class="review-card-text">El joven Brayan es un excelente anfitrión siempre atento a las necesidades de sus huéspedes y responde rápido, respecto del lugar es muy tranquilo y agradable, a la vuelta (media cuadra) hay unos ricos tacos con buen sabor y precio</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/34-Rodolfo.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Rodolfo Israel</p>
+                            <p class="review-user-city">Ciudad de México, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2022</p>   
+                        <p class="review-card-text">El lugar esta tal cual en la descripción</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/35-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2022</p>   
+                        <p class="review-card-text">I would really recommend this place. Everything was great</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/36-Juan.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Juan</p>
+                            <p class="review-user-city">Los Ángeles, California</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2022</p>   
+                        <p class="review-card-text">Great Location</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/37-Juan.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Juan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2022</p>   
+                        <p class="review-card-text">Muy buena atención y un lugar accesible para quedarse.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/38-Christian.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Christian Emmanuel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2022</p>   
+                        <p class="review-card-text">excelente lugar, cómodo y con todos los servicios. muy recomendable. gracias, nos gustó mucho.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/39-Vladimir.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Vladimir</p>
+                            <p class="review-user-city">Ciudad de México, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2022</p>   
+                        <p class="review-card-text">La estancia fue muy bien, las instrucciones fueron claras y el lugar muy agradable. Brayan es muy rápido para responder a cualquier pregunta o inquietud. Es un lugar donde se respeta la privacidad, fue muy agradable!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/40-Mélissa.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Mélissa</p>
+                            <p class="review-user-city">Lyon, Francia</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2022</p>   
+                        <p class="review-card-text">¡Excelente!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/41-Patricia.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Patricia</p>
+                            <p class="review-user-city">Uruapan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2022</p>   
+                        <p class="review-card-text">Cómoda y agradable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/42-manuel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Manuel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • agosto de 2022</p>   
+                        <p class="review-card-text">Gracia, tal cual lo descrito en la publicación, excelente servicio de llegada.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/43-Vane.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Vane</p>
+                            <p class="review-user-city">Barcelona, España</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2022</p>   
+                        <p class="review-card-text">Buena atención por parte del anfitrión. Estaba cerca de las instalaciones de la feria. 😃</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/44-Samanta.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Samanta</p>
+                            <p class="review-user-city">Ciudad López Mateos, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2022</p>   
+                        <p class="review-card-text">Súper agusto, limpio y Brayan siempre al pendiente.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/45-Nallely.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Nallely</p>
+                            <p class="review-user-city">Manzanillo, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2022</p>   
+                        <p class="review-card-text">Buena ubicación una zona tranquila</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/46-Kevin.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Kevin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2022</p>   
+                        <p class="review-card-text">Un buen lugar para alojarse, fácil de llegar y la zona bastante tranquila. Buena opción si necesitan asistir al estadio Jalisco ya que está cerca. La comunicación con Brayan es buena.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/47-Jared.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jared</p>
+                            <p class="review-user-city">Guanajuato, México</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2023</p>   
+                        <p class="review-card-text">habitaciones seguras y tranquilidad absoluta para poder descansar adecuadamente, seguro regresaré en mi próxima visita a GDL</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/48-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Morelos, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2023</p>   
+                        <p class="review-card-text">Fue un lugar muy bonito adecuado para la ocasión y volvería a regresar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/49-Roberto.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Roberto Carlos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2023</p>   
+                        <p class="review-card-text">Muy buen lugar, tranquilo, buena ubicación y muy atentos</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/50-Francisco.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Francisco De Jesús</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★☆☆ • enero de 2023</p>   
+                        <p class="review-card-text">Digamos que por el precio es justo, pero lo recomiendo como yo lo hice por solo una noche o muy corta estancia</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/51-Alejandro.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Alejandro</p>
+                            <p class="review-user-city">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2023</p>   
+                        <p class="review-card-text">El alojamiento es tal cual la descripción, cómodo y tranquilo. Sin duda me volvería a alojar en este lugar.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/52-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • febrero de 2023</p>   
+                        <p class="review-card-text">Buena comunicación con el anfitrión, lugar cómodo y fácil acceso</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/53-Obelia.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Obelia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2023</p>   
+                        <p class="review-card-text">Buena ubicación, buena comunicación con el anfitrión, encuentras muchas cosas cerca, tienes todo lo necesario para la estadía, todo muy bien</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/54-Anaid.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Anaid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Gracias</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/55-Andros.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Andros</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Excelente alojamiento, todo limpio Brayan muy buen anfitrión, siempre al pendiente y muy atento.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/56-Antonio.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Antonio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Muy recomendable, todo excelente!!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/57-Beatriz.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Beatriz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">todo muy bien, el lugar limpio, tranquilo, mucha privacidad, en resumen muy contentos con el anfitrión, volveríamos a usar su apartamento</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/58-Eliud.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Eliud Bady</p>
+                            <p class="review-user-city">Oaxaca, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Excelente lugar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/59-Borrayo.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Borrayo Amaro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Bastante cómodo y con todas las amenidades necesarias para una estancia, recomendado</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/60-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">affordable, flexible, easy to check-in and check-out. easy to find the place, clear rules and instructions, and the host answers quick. recomendable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/61-Derek.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Derek</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Excelente opción en cuanto calidad precio, Brayan súper amable y atento</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/62-Saul.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Saul</p>
+                            <p class="review-user-city">Culiacán, Méxicoo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Todo super , solo dar mantenimiento a los contactos eléctricos del cuarto ,muy flojos y se cae los enchufes</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/63-Luis.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Luis Ricardo</p>
+                            <p class="review-user-city">Aguascalientes, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Lugar tranquilo, cómodo y bonito, lo recomiendo ampliamente. Bryan muy amable y accesible, resolvía nuestras dudas al instante y dio muy buenas recomendaciones.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/64-Citlaly.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Citlaly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">Zona tranquila, cerca de accesos a transporte público si no vas en coche propio, buena atención del anfitrión siempre al pendiente.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/65-Hortencia.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Hortencia</p>
+                            <p class="review-user-city">San Luis Potosí, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2023</p>   
+                        <p class="review-card-text">muy buen lugar y estancia tranquila siempre estuvo allí pendiente por cualquier cosa</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/66-Jonathan.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jonathan</p>
+                            <p class="review-user-city">Chihuahua, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2023</p>   
+                        <p class="review-card-text">Siempre cumple con mis expectativas, sin duda un lugar cómodo para alojarme.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/60-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2023</p>   
+                        <p class="review-card-text">excelente Anfitrión siempre estuvo al tanto de lo que faltaba. la habitación excelente, lo recomiendo ampliamente.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/68-Ernesto.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ernesto</p>
+                            <p class="review-user-city">Santiago de Querétaro, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2023</p>   
+                        <p class="review-card-text">ok.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/69-Maria.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Maria Del Pilar</p>
+                            <p class="review-user-city">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2023</p>   
+                        <p class="review-card-text">Siempre cumple con lo que ofrece en la estadía</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/60-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2023</p>   
+                        <p class="review-card-text">El lugar es muy tranquilo, la zona también. Llegué muy tarde y me sentí seguro todo el tiempo. Brayan siempre muy atento a los mensajes. Sin pensarlo me volvería a quedar ahí.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/71-Rayn.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Rayn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2023</p>   
+                        <p class="review-card-text">Muy amable el dueño, toda la estancia estuvo bien...</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/72-Anabel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Anabel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2023</p>   
+                        <p class="review-card-text">El alojamiento que ofrece Brayan está increíble; y en un lugar céntrico que desenvoca correctamente al centro de Guadalajara. Tiene una comunicación constante con los inquilinos y es sumamente amable. Además; nos dió recomendaciones dónde cenar muy ricas. Definitivamente lo recomiendo ampliamente y volvería a alojarme ahí.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/73-Ricardo.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ricardo</p>
+                            <p class="review-user-city">Sabinas Hidalgo, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2023</p>   
+                        <p class="review-card-text">Good spot & good location to stay at</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/74-Adan.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Adan</p>
+                            <p class="review-user-city">Phoenix, Arizona</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2023</p>   
+                        <p class="review-card-text">Todo muy bien. Muchas gracias por la atención. Sin duda lo recomiendo.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/75-Alvaro.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Alvaro</p>
+                            <p class="review-user-city">Ecatepec de Morelos, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • mayo de 2023</p>   
+                        <p class="review-card-text">muy buen lugar y estancia tranquila siempre estuvo allí pendiente por cualquier cosa</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/76-Francisco.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Francisco Missael</p>
+                            <p class="review-user-city">Santiago de Querétaro, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • junio de 2023</p>   
+                        <p class="review-card-text">recomiendo ampliamente al anfitrión, solo en este tiempo de calor sería conveniente por lo menos otro ventilador, el de techo no es suficiente, fuera de esta recomendación todo es excelente</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/77-Ivan.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ivan</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2023</p>   
+                        <p class="review-card-text">Excelente lugar para quedarse y descansar, Brayan súper atento desde la primera comunicación. sin duda recomendable y regreso cada que vuelva a GDL</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/78-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Morelos, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2023</p>   
+                        <p class="review-card-text">mi mejor opción para quedarme en la ciudad 100% recomendado</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/78-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Morelos, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2023</p>   
+                        <p class="review-card-text">Todo muy bien, gracias</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/80-Gabriela.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Gabriela</p>
+                            <p class="review-user-city">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2023</p>   
+                        <p class="review-card-text">una agradable estancia!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/81-Janeth.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Janeth</p>
+                            <p class="review-user-city">Ciudad Acuña, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • junio de 2023</p>   
+                        <p class="review-card-text">Bien</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/82-Marco.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Marco Antonio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2023</p>   
+                        <p class="review-card-text">Todo muy bien, fue muy amable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/83-Michelle.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Michelle</p>
+                            <p class="review-user-city">Morelia, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★☆☆ • julio de 2023</p>   
+                        <p class="review-card-text">Gracias</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/84-Martin.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Martin</p>
+                            <p class="review-user-city">Irapuato, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2023</p>   
+                        <p class="review-card-text">excelente lugar 👍️</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/85-Mon.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Mon</p>
+                            <p class="review-user-city">Seúl, Corea del Sur</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2023</p>   
+                        <p class="review-card-text">muy limpio todo, me encanto el espacio abierto, tiene una terraza linda. me encanto que tiene un mapa y recomendaciones de comida y tiendas en la zona.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/86-Maria .jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Maria Gricelda</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2023</p>   
+                        <p class="review-card-text">Todo muy bien, muy atento Brayan 🤙🏾</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/87-José.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">José Ricardo</p>
+                            <p class="review-user-city">Guadalajara, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2023</p>   
+                        <p class="review-card-text">Estuvimos muy agusto mi familia y yo... Gracias Brayan...</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/88-Mariana.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Mariana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • julio de 2023</p>   
+                        <p class="review-card-text">Es la segunda vez que reservo y todo muy bien 10/10</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/89-José.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">José Ricardo</p>
+                            <p class="review-user-city">Guadalajara, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2023</p>   
+                        <p class="review-card-text">Brayan was incredibly helpful during my stay. The check-in was clear from the get-go, and he responded to all of my questions in a timely manner. Overall, he was quite accommodating and understanding. Everything was in order, and the terrace view, especially at sunset, is lovely.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/90-Cindy.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Cindy</p>
+                            <p class="review-user-city">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2023</p>   
+                        <p class="review-card-text">El departamento es muy cómodo, funcional y está bien ubicado. El anfitrión siempre atento para orientarnos y resolver nuestras dudas. Sin duda regresaría.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/91-Luz.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Luz María</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2023</p>   
+                        <p class="review-card-text">Un excelente lugar para descansar. Cuenta con lo que se necesita para la estancia. Brayan es una persona atenta y amable. Excelente.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/92-Rosy.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Rosy</p>
+                            <p class="review-user-city">Autlán, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2023</p>   
+                        <p class="review-card-text">Muy agradable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/93-Areli.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Areli</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • septiembre  de 2023</p>   
+                        <p class="review-card-text">Excelente servicio 👏🏼</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/94-Alejandro.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Alejandro</p>
+                            <p class="review-user-city">Tlaquepaque, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★☆☆ • septiembre de 2023</p>   
+                        <p class="review-card-text">Ubicación conveniente, zona tranquila, llegué a caminar de noche en busca de comida y fue seguro. Cerca estaban las farmacias, los tacos, el walmart y tienditas que vendian de todo.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/95-Jennifer.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jennifer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • septiembre de 2023</p>   
+                        <p class="review-card-text">Siempre estuvo en comunicación conmigo, resolvió todas mis dudas, fue muy flexible. La casa limpia, todo bien ordenado y organizado, zona tranquila</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/96-Dens.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Dens</p>
+                            <p class="review-user-city">Santiago de Querétaro, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">Siempre es una buena opción para hospedarte, cumple con todo lo que publica, muy buen alojamiento.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/60-Jorge.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jorge</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">todo de acuerdo a su anuncio, lo recomiendo ampliamente</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/98-Salvador.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Salvador</p>
+                            <p class="review-user-city">Autlán, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">👌🏻 Excelente lugar para llegar a descansar después de recorrer todo Guadalajara 😁 Todo estuvo 10/10.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/99-Elvia.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Elvia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">Todo es tal cual lo describe y como aparece en las fotos. Hay mucho comercio cerca, hay tienditas, super, lugares pra comer y el acceso a transporte público está 10/10.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/100-Beatriz.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Beatriz</p>
+                            <p class="review-user-city">Hermosillo, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">muy agradable el lugar ☺︎👌🏻 y Bryan muy atento y amable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/101-Nieves.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Nieves</p>
+                            <p class="review-user-city">Aguascalientes, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">Excelente servicio, me senti como en casa, un buen lugar para descansar.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/102-Isaias.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Isaias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">Un lugar muy tranquilo, y cerca de la linea del tren ligero</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/103-Carlos.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Carlos</p>
+                            <p class="review-user-city">Mazatlán, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">ubicación fácil de llegar, buena limpieza, cama muy Agusto, tiene ventilador, la cocina tenía lo suficiente, la colonia tranquila y te da seguridad al caminar por la noche, tiene un Oxxo cerca, si me volvería a quedar en este alojamiento.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/104-Francys.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Francys</p>
+                            <p class="review-user-city">Tepic, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2023</p>   
+                        <p class="review-card-text">Vale la pena el alojamiento, algo sencillo pero muy comodo y tiene lo necesario y sobretodo seguridad al ingresar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/105-Luis.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Luis Pablo</p>
+                            <p class="review-user-city">Colima, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">Súper recomendable, te sientes como en casa, Brayan muy atento!! Sin duda volvería a rentarlo!!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/106-Carlos.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Carlos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">Great place</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/107-Chelsye.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Chelsye</p>
+                            <p class="review-user-city">Sayulita, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">TIENE UN AMBIENTE MUY AGRABLE CON MUCHA PRIVACIDAD, EN GENERAL TODO MUY LIMPIO, EL MUY ATENTO Y SIEMPRE AL PENDIENTE DE NUESTRAS SOLICITUDES Y PREGUNTAS Y EL LUGAR CON MUCHA SEGURIDAD, ESPACIOSO UNA ZONA TRANQUILA.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/108-Martha.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Martha Idalia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">excelente comunicación con el anfitrión, muy limpio y muy agradable lugar para estar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/109-Guillermo.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Guillermo</p>
+                            <p class="review-user-city">Morelia, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">It's a nice place to spend a weekend in Guadalajara and the host is responsive and helpful. Not far from the center so still lots of things within a 20 min car ride.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/110-Barnabas.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Barnabas</p>
+                            <p class="review-user-city">Cali, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">El hospedaje nos agradó mucho ya que cumplía con lo que decía en el anuncio. El anfitrión siempre estuvo apoyándonos. La zona muy tranquila y para lo que nosotros buscábamos estuvo perfecto.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/111-Melisa.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Melisa</p>
+                            <p class="review-user-city">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • noviembre de 2023</p>   
+                        <p class="review-card-text">El lugar es tal como se anuncia, práctico, cómodo y limpio, por el precio es justo. Solo mejoraría el baño, está pequeño y resulta un poco incómodo que esté ahí la lavadora. Faltan algunos utensilios para la cocina como tazas, cacerolas, sartén y trapos.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/112-Ignacio.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ignacio</p>
+                            <p class="review-user-city">La Manzanilla de La Paz, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2023</p>   
+                        <p class="review-card-text">Una estancia cómoda</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/113-Ana.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ana Luz</p>
+                            <p class="review-user-city">León, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • diciembre  de 2023</p>   
+                        <p class="review-card-text">Buena opción para estancias cortas</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/114-Danielle.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Danielle</p>
+                            <p class="review-user-city">México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • diciembre de 2023</p>   
+                        <p class="review-card-text">Nuestra estancia fue breve pero todo es tal cual ofrece el anfitrion, hay tiendas cerca del sitio, el lugar es agradable y limpio, en nuestro caso teniamos un evento y nos quedaba muy cerca de la zona de plaza patria, super si vuelvo.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/115-Pablo.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Pablo</p>
+                            <p class="review-user-city">Guadalajara, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • diciembre de 2023</p>   
+                        <p class="review-card-text">alojamiento con excelentes servicios...</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/116-Eneida.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Eneida Guadalupe</p>
+                            <p class="review-user-city">Chihuahua, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2024</p>   
+                        <p class="review-card-text">Muy amable Brayan, y sus instalaciones muy agusto.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/117-Oscar.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Oscar Cesar</p>
+                            <p class="review-user-city">San José Iturbide, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2024</p>   
+                        <p class="review-card-text">Para una estancia corta está perfecto</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/118-Tania.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Tania</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • febrero de 2024</p>   
+                        <p class="review-card-text">Brayan is a great host. The place was very clean and organized.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/119-Maite.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Maite</p>
+                            <p class="review-user-city">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2024</p>   
+                        <p class="review-card-text">Excelente atención y accesible</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/120-Beatriz.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Beatriz</p>
+                            <p class="review-user-city">Guadalajara, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2024</p>   
+                        <p class="review-card-text">Muy buena atención de parte de Brayan, el inmueble con buena ubicación y cómodo.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/121-Ixchel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ixchel</p>
+                            <p class="review-user-city">Atlacomulco, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2024</p>   
+                        <p class="review-card-text">perfect place to stay</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/122-Luis.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Luis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2024</p>   
+                        <p class="review-card-text">excelente Airbnb para pasar la noche, la zona es muy tranquila, nos gustó bastante</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/123-Camilo.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Camilo</p>
+                            <p class="review-user-city">Moroleón, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • marzo de 2024</p>   
+                        <p class="review-card-text">a corde del precio está muy bien la estancia</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/124-Jair.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jair</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2024</p>   
+                        <p class="review-card-text">Tuvimos una estancia tranquila, el espacio coincidía con todo lo descrito y Brayan estuvo siempre atento para lo que necesitamos.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/125-Rubi.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Rubi</p>
+                            <p class="review-user-city">Guanajuato, México</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2024</p>   
+                        <p class="review-card-text">Lugar muy tranquilo para descansar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/126-Agustin.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Agustin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2024</p>   
+                        <p class="review-card-text">excelente servicio, únicamente el detalle de la entrada poco reducida x el árbol de la banqueta pero de ahí en fuera muy buen lugar... también haría falta una sombrilla o algo en la mesa de la terraza x los calores</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/127-Antonio.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Antonio</p>
+                            <p class="review-user-city">San José Iturbide, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • abril de 2024</p>   
+                        <p class="review-card-text">Alojamiento en buenas condiciones y acorde a las fotografías mostradas en la publicación, el precio es justo. El anfitrión fue flexible con la hora de llegada y respondía a los mensajes en tiempo y forma. Estuvo 10/10.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/128-Claritza.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Claritza</p>
+                            <p class="review-user-city">Tampico, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2024</p>   
+                        <p class="review-card-text">Excelente ubicación y zona tranquila, me quedó un poco lejos del estadio 3 de marzo, aún así volvería sin dudarlo.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/129-Daniel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Daniel</p>
+                            <p class="review-user-city">Tijuana, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • junio de 2024</p>   
+                        <p class="review-card-text">.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/130-Christian.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Christian</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • junio de 2024</p>   
+                        <p class="review-card-text">buena ubicación, zona tranquila, las habitaciones cómodas, el baño es pequeño, y el espacio de la taza algo incómodo, todo lo demás muy bien</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/131-Ivan.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ivan</p>
+                            <p class="review-user-city">Matehuala, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2024</p>   
+                        <p class="review-card-text">Excelente precio por el lugar... coincide con las fotos. muy cerca de todos los servicios. Bastante atento y muy flexible...</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/132-Pepe.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Pepe Fernández
+                            <p class="review-user-city">Guadalajara, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • agosto de 2024</p>   
+                        <p class="review-card-text">Todo muy bien solo que si hace falta aire acondicionado por qué si hace calor</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/133-Marcela.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Marcela</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • agosto de 2024</p>   
+                        <p class="review-card-text">Agradable estancia, un lugar al aire libre, genial para nosotros, la terraza muy amplia! Acceso a vías principales. Lo recomiendo ampliamente!</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/134-Gladis.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Gladis</p>
+                            <p class="review-user-city">La Paz, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • septiembre de 2024</p>   
+                        <p class="review-card-text">Buena atención de Brayan , muchas gracias</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/135-Alejandro.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Alejandro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • octubre de 2024</p>   
+                        <p class="review-card-text">Muy limpio al llegar y muy fácil de acceder. La casa se encuentra en un área cerca de muchas atracciones turísticas. Brayan fue excelente con nosotros, respuestas rápidas. Muchas gracias por todo hermano, 100% recomendable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/136-Efrain.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Efrain</p>
+                            <p class="review-user-city">Amarillo, Texas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★☆☆ • octubre de 2024</p>   
+                        <p class="review-card-text">accesible el lugar, no apto para personas con discapacidad móvil, ya que es en planta alta, seguro el coche pues tiene cochera privada</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/137-Marisol.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Marisol</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2024</p>   
+                        <p class="review-card-text">Brayan es muy atento, siempre al pendiente y en comunicación, muy recomendable si van a las fiestas de octubre</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/138-Ale.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Ale</p>
+                            <p class="review-user-city">San Luis Potosí, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • noviembre de 2024</p>   
+                        <p class="review-card-text">excelente estadía y gran anfitrión definitivamente volvería</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/139-Fatima.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Fatima Y Alejandro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • diciembre  de 2024</p>   
+                        <p class="review-card-text">Cumplió con lo requerido y fue lo que necesitamos.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/140-Nayelli.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Nayelli</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • diciembre de 2024</p>   
+                        <p class="review-card-text">Muy amable muchas gracias</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/141-Soluciones.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Soluciones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • enero de 2025</p>   
+                        <p class="review-card-text">amable y atento.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/142-Isaac.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Isaac</p>
+                            <p class="review-user-city">Laurel, Maryland</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2025</p>   
+                        <p class="review-card-text">El apartamento es muy acogedor. Pasamos mucho tiempo en la azotea y disfrutamos de las noches.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/143-Raphael.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Raphael</p>
+                            <p class="review-user-city">Winterthur, Suiza</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • febrero de 2025</p>   
+                        <p class="review-card-text">Súper recomendada muy cómoda y agradable, la atención excelente, limpia y agradable</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/144-Irma.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Irma Vianey</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★☆ • febrero de 2025</p>   
+                        <p class="review-card-text">Noisy neighbors</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/145-Jaime.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Jaime</p>
+                            <p class="review-user-city">Montreal, Canadá</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • abril de 2025</p>   
+                        <p class="review-card-text">Tenía todo lo que necesitábamos para nuestra estancia después de un largo día. Estaba cerca de las principales avenidas, tiendas y no muy lejos del centro de la ciudad. El garaje fue especialmente útil, ya que teníamos un auto de alquiler.</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/146-Anabel.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Anabel</p>
+                            <p class="review-user-city">Riverside, California</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2025</p>   
+                        <p class="review-card-text">todo super bien</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/147-Mario.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Mario Alberto</p>
+                            <p class="review-user-city">Monterrey, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <p class="review-stars-date">★★★★★ • mayo de 2025</p>   
+                        <p class="review-card-text">Exelente lugar</p>
+                    </div>
+                    
+                    <div class="review-photo-name">
+                        <img src="img/reviews/148-Eric.jpg" alt="Foto de perfil" class="review-photo"/>
+                        <div>
+                            <p class="review-user-name">Eric</p>
+                            <p class="review-user-city">Zapopan, México</p>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            
+
+            <a href="https://www.airbnb.mx/users/show/399965323" class="btn btn-reviews" target="_blank">Mostrar más evaluaciones</a>
+
         </section>   
 
+        <section class="list-section" id="list-section">
+            <h3>Mis anuncios</h3>
+            <div class="list-scroller">
+
+                <a class="list-card" href="https://www.airbnb.mx/h/casaairelibre">
+                    <div alt="" class="list-img casaairelibre"></div>
+                    <div>
+                        <p class="list-type">Residencia</p>   <p></p>
+                        <p class="list-name-reviews">Casa al aire libre con cochera</p>
+                        <p class="list-name-reviews">★ 4.83 | 81 evaluaciones</p>
+                    </div>
+                </a>  
+
+                <a class="list-card" href="https://www.airbnb.mx/h/depazonareal">
+                    <div alt="" class="list-img depazonareal"></div>
+                    <div>
+                        <p class="list-type">Departamento con servicios</p>   
+                        <p class="list-name-reviews">Departamento con vista Zona Real | Piscina & Gym</p>
+                        <p class="list-name-reviews">★ 4.88 | 8 evaluaciones</p>
+                    </div>
+                </a>  
+
+                <a class="list-card" href="https://www.airbnb.mx/h/casapbvistacalifornia">
+                    <div alt="" class="list-img casapbvistacalifornia"></div>
+                    <div>
+                        <p class="list-type">Residencia</p>   
+                        <p class="list-name-reviews">Cómoda casa en Residencial Vista California</p>
+                        <p class="list-name-reviews">★ 5.0 | 81 evaluaciones</p>
+                    </div>
+                </a>  
+
+                <a class="list-card" href="https://www.airbnb.mx/h/casapavistacalifornia">
+                    <div alt="" class="list-img casapavistacalifornia"></div>
+                    <div>
+                        <p class="list-type">Residencia</p>   
+                        <p class="list-name-reviews">Cómoda casa en Residencial Vista California | P.A.</p>
+                        <p class="list-name-reviews">★ 4.83 | 6 evaluaciones</p>
+                    </div>
+                </a>  
+            </div>
+
+            <a href="https://www.airbnb.mx/users/show/399965323" class="btn btn-reviews" target="_blank">Mostrar los espacios</a>
+
+        </section>   
+
+        <section class="aircover-section" id="aircover-section">
+            <div class="aircover-info">
+                <img src="img/aircover.png" alt="">
+                <h1>Hospedes como hospedes, cuentas con protección</h1>
+                <h5>Protección amplia incluida en todas tus reservaciones en Airbnb.</h5>
+            </divv>
+
+            <div class="aircover-items">
+                <div class="aircover-list">
+                    <div class="aircover-item">
+                      <p>Protección contra daños de hasta 3 millones de dólares</p>
+                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:currentColor;stroke-width:2.6666666666666665;overflow:visible" aria-label="Una marca de verificación que indica que la función está incluida." role="img" focusable="false"><path d="m4.5 14 8 8 16-16" fill="none"></path></svg>
+                    </div>
+                    <div class="aircover-item aircover-item-mid">
+                      <p>Seguro de responsabilidad civil por hasta 1 millón de dólares</p>
+                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:currentColor;stroke-width:2.6666666666666665;overflow:visible" aria-label="Una marca de verificación que indica que la función está incluida." role="img" focusable="false"><path d="m4.5 14 8 8 16-16" fill="none"></path></svg>
+                    </div>
+                    <div class="aircover-item">
+                      <p>Teléfono de seguridad disponible las 24 horas</p>
+                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:currentColor;stroke-width:2.6666666666666665;overflow:visible" aria-label="Una marca de verificación que indica que la función está incluida." role="img" focusable="false"><path d="m4.5 14 8 8 16-16" fill="none"></path></svg>
+                    </div>
+                    <a href="https://www.airbnb.mx/aircover-for-hosts" class="btn btn-price btn-aircover" target="_blank">Más información sobre AirCover</a>
+                </div>
+                
+                <p class="aircover-details">La Protección contra daños para anfitriones reembolsa ciertos desperfectos que causen los huéspedes durante las estancias. No es un seguro y puede aplicarse si los huéspedes no pagan. El Seguro de responsabilidad civil lo ofrecen terceros. <a href="https://www.airbnb.mx/help/article/3733" class="aircover-details-link">Consulta los detalles y exclusiones.</a></p>
+                
+            </div>
+
+        </section>
+
+        <section class="price-section" id="price-section">
+            
+            <div class="price-info">
+                <h3>Mis precios</h3>
+                <p>Pregúntame cuánto te cobraría exactamente por lo que necesitas en concreto.</p>
+            </div>
+
+            <h3 class="price-service-type">Servicios Únicos</h3>
+
+            <div class="price-service-pack">
+                <div class="price-service">
+                    <h5>Fotos profesionales del alojamiento</h5>
+                    <div>
+                        <p>$2,000 MXN</p>
+                        <h6>15 fotos en dom.</h6>
+                    </div>
+                </div>
+                <div>
+                    <h6>PRESENCIAL <br> *Servicio de fotografía para anuncio</h6>
+                    <a href="https://wa.me/3326392314?text=Hola Brayan, estoy interesado en el servicio de Fotos profesionales para mi alojamiento" class="btn btn-price" target="_blank"></i>Me interesa</a>
+                </div>
+                
+            </div>
+
+            <div class="price-service-pack">
+                <div class="price-service">
+                    <h5>Creación y diseño del anuncio</h5> 
+                    <div>
+                        <p>$2,500 MXN</p>
+                        <h6>por anuncio</h6>
+                    </div>
+                </div>
+
+                <div>
+                    <h6>REMOTO <br> *Servicio de creación de anuncio (sin fotos)</h6>
+                    <a href="https://wa.me/3326392314?text=Hola Brayan, estoy interesado en el servicio de Creación de anuncio en Airbnb" class="btn btn-price" target="_blank"></i>Me interesa</a>
+                </div>
+            </div>
+            
+            <div class="price-service-pack">
+                <div>
+                    <div class="price-service">
+                        <h5>Fotos profesionales del alojamiento</h5> 
+                        <div>
+                            <p>¡GRATIS!</p>
+                            <h6>con anuncio</h6>
+                        </div>
+                    </div>
+
+                    <div class="price-service">
+                        <h5>Creación y diseño del anuncio</h5> 
+                        <div>
+                            <p>$3,500 MXN</p>
+                            <h6>por anuncio</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6>PRESENCIAL Y REMOTO<br> *Servicio de fotografía y creación de anuncio</h6>
+                    <a href="https://wa.me/3326392314?text=Hola Brayan, estoy interesado en el servicio de Fotografía y creación de anuncio" class="btn btn-price" target="_blank"></i>Me interesa</a>
+                </div>
+            </div>
+
+            <h3 class="price-service-type">Servicios de <br>Administración y Soporte</h3>
+
+            <div class="price-service-pack">
+                <div>
+                    <div class="price-service">
+                        <h5>Creación y diseño del anuncio</h5> 
+                        <div>
+                            <p>¡GRATIS!</p>
+                            <h6>con admin.</h6>
+                        </div>
+                    </div>
+
+                    <div class="price-service">
+                        <h5>Administración y soporte</h5> 
+                        <div>
+                            <p>20%</p>
+                            <h6>por reservación</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6>REMOTO <br> *Servicio de administración y soporte</h6>
+                    <a href="https://wa.me/3326392314?text=Hola Brayan, estoy interesado en el servicio de Administración y soporte de Airbnb" class="btn btn-price" target="_blank"></i>Me interesa</a>
+                </div>
+            </div>
+
+            <div class="price-service-pack">
+                <div>
+                    <div class="price-service">
+                        <h5>Fotos profesionales del alojamiento</h5> 
+                        <div>
+                            <p>$1,500 MXN</p>
+                            <h6>15 fotos a dom.</h6>
+                        </div>
+                    </div>
+
+                    <div class="price-service">
+                        <h5>Creación y diseño del anuncio</h5> 
+                        <div>
+                            <p>¡GRATIS!</p>
+                            <h6>con admin.</h6>
+                        </div>
+                    </div>
+
+                    <div class="price-service">
+                        <h5>Administración y soporte</h5> 
+                        <div>
+                            <p>20%</p>
+                            <h6>por reservación</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6>PRESENCIAL Y REMOTO <br> *Servicio de fotografía, administración y soporte</h6>
+                    <a href="https://wa.me/3326392314?text=Hola Brayan, estoy interesado en el servicio de Fotografía, administración y soporte de 20% por reservación" class="btn btn-price" target="_blank"></i>Me interesa</a>
+                </div>
+            </div>
+
+            <div class="price-service-pack">
+                <div>
+                    <div class="price-service">
+                        <h5>Fotos profesionales del alojamiento</h5> 
+                        <div>
+                            <p>¡GRATIS!</p>
+                            <h6>con admin.</h6>
+                        </div>
+                    </div>
+
+                    <div class="price-service">
+                        <h5>Creación y diseño del anuncio</h5> 
+                        <div>
+                            <p>¡GRATIS!</p>
+                            <h6>con admin.</h6>
+                        </div>
+                    </div>
+
+                    <div class="price-service">
+                        <h5>Administración y soporte</h5> 
+                        <div>
+                            <p>25%</p>
+                            <h6>por reservación</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6>PRESENCIAL Y REMOTO <br> *Servicio de fotografía, administración y soporte</h6>
+                    <a href="https://wa.me/3326392314?text=Hola Brayan, estoy interesado en el servicio de Fotografía, administración y soporte de 25% por reservación" class="btn btn-price" target="_blank"></i>Me interesa</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="aboutme-section" id="aboutme-section">
+            
+            <h3>Más información sobre mí</h3>
+
+            <div class="aboutme-scroller">
+                <div class="aboutme-card">
+                    <img src="img/profile.webp" alt="Brayan Sánchez">
+                    <div class="aboutme-card-verified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Verificado" role="img" focusable="false" ><path d="m16 .8.56.37C20.4 3.73 24.2 5 28 5h1v12.5C29 25.57 23.21 31 16 31S3 25.57 3 17.5V5h1c3.8 0 7.6-1.27 11.45-3.83L16 .8zm7 9.08-9.5 9.5-4.5-4.5L6.88 17l6.62 6.62L25.12 12 23 9.88z"></path></svg></div>
+                    <h5>Brayan</h5>
+                    <div class="card-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false"><path d="m8.5 7.6 3.1-1.75 1.47-.82a.83.83 0 0 0 .43-.73V1.33a.83.83 0 0 0-.83-.83H3.33a.83.83 0 0 0-.83.83V4.3c0 .3.16.59.43.73l3 1.68 1.57.88c.35.2.65.2 1 0zm-.5.9a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"></path></svg>
+                        <h6>Coanfitrión</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="M20 2a2 2 0 0 1 2 1.85V6h6a3 3 0 0 1 3 2.82V27a3 3 0 0 1-2.82 3H4a3 3 0 0 1-3-2.82V9a3 3 0 0 1 2.82-3H10V4a2 2 0 0 1 1.85-2H12zm8 6H4a1 1 0 0 0-1 .88V12a3 3 0 0 0 2.82 3H13v2H6a4.98 4.98 0 0 1-3-1v11a1 1 0 0 0 .88 1H28a1 1 0 0 0 1-.88V16c-.78.59-1.74.95-2.78 1h-7.17v-2H26a3 3 0 0 0 3-2.82V9a1 1 0 0 0-.88-1zm-10 4a1 1 0 0 1 1 .88V19a1 1 0 0 1-.88 1H14a1 1 0 0 1-1-.88V13a1 1 0 0 1 .88-1H14zm-1 2h-2v4h2zm3-10h-8v2h8z"></path></svg>
+                    <div class="card-info2">
+                        <h5>Me profesión es</h5>
+                        <h6>Coanfitrión Airbnb, Diseñador y Desarrollador Web</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="M0 18v-2h1.3A15.02 15.02 0 0 1 13.27 4.25a3 3 0 1 1 5.46 0c6 1.1 10.76 5.78 11.97 11.75H32v2zM16 6A13 13 0 0 0 3.35 16h25.3A13 13 0 0 0 16 6zm0-4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7.55 18.1a3.24 3.24 0 0 1 3.07 5.7l-.17.1-9.63 4.82a5 5 0 0 1-3.23.43l-.25-.05-7.84-2.01A2 2 0 0 1 4 27.31V22a2 2 0 0 1 1.85-2h11.26l.14.01L19 20c.92.01 1.44.7 1.57 1.59zm2.56 2.35a1.24 1.24 0 0 0-1.54-.6l-.12.04-4.37 2.19a3.89 3.89 0 0 1-3.34 1.91l-.24.01H12v-2h5a2 2 0 0 0 2-1.85V22l-3.7.02h-1.58L12.6 22l-.6-.01H6v5.15l7.83 2.01a3 3 0 0 0 1.9-.13l.2-.1 9.62-4.82c.61-.3.86-1.05.56-1.66z"></path></svg>
+                    <div class="card-info2">
+                        <h5>A los huéspedes, siempre</h5>
+                        <h6>Les doy privacidad</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="M16 0c5.9 0 11 5.28 11 11 0 4.85-3.23 9.27-9.55 13.28l2.2 2.92a1.13 1.13 0 0 1-.9 1.8H17v3h-2v-3h-1.75a1.13 1.13 0 0 1-.9-1.8l2.14-2.86C8.2 20.92 5 16.46 5 11A11 11 0 0 1 16 0zm0 25.67L15 27h2zM16 2a9 9 0 0 0-9 9c0 4.6 2.72 8.43 8.3 11.5l.38.21.28.14.3-.19c5.62-3.53 8.48-7.24 8.72-11.12l.02-.27V11c0-4.64-4.21-9-9-9z"></path></svg>
+                    <div class="card-info2">
+                        <h5>Nací en la década de</h5>
+                        <h6>la década del 90</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="m31.47 10.12-15-8a1 1 0 0 0-.94 0l-15 8a1 1 0 0 0 0 1.76L4 13.73V23a1 1 0 0 0 .52.88l11 6a1 1 0 0 0 .96 0l11-6A1 1 0 0 0 28 23v-9.27l2-1.06V23h2V11a1 1 0 0 0-.53-.88zM26 22.4l-10 5.45-10-5.45V14.8l9.53 5.08a1 1 0 0 0 .94 0L26 14.8v7.6zm-10-4.54L3.12 11 16 4.13 28.88 11 16 17.87z"></path></svg>
+                    <div class="card-info2">
+                        <h5>Dónde estudié</h5>
+                        <h6>CUAAD - Campus Huentitán</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="M26 2a5 5 0 0 1 5 4.78V21a5 5 0 0 1-4.78 5h-6.06L16 31.08 11.84 26H6a5 5 0 0 1-4.98-4.56L1 21.22 1 21V7a5 5 0 0 1 4.78-5H26zm0 2H6a3 3 0 0 0-3 2.82V21a3 3 0 0 0 2.82 3H12.8l3.2 3.92L19.2 24H26a3 3 0 0 0 3-2.82V7a3 3 0 0 0-2.82-3H26zM16 6a8.02 8.02 0 0 1 8 8.03A8 8 0 0 1 16.23 22h-.25A8 8 0 0 1 8 14.24v-.25A8 8 0 0 1 16 6zm1.68 9h-3.37c.11 1.45.43 2.76.79 3.68l.09.22.13.3c.23.45.45.74.62.8H16c.33 0 .85-.94 1.23-2.34l.11-.44c.16-.67.29-1.42.34-2.22zm4.24 0h-2.23c-.1 1.6-.42 3.12-.92 4.32a6 6 0 0 0 3.1-4.07l.05-.25zm-9.61 0h-2.23a6 6 0 0 0 3.14 4.32c-.5-1.2-.82-2.71-.91-4.32zm.92-6.32-.13.07A6 6 0 0 0 10.08 13h2.23c.1-1.61.42-3.12.91-4.32zM16 8h-.05c-.27.08-.64.7-.97 1.65l-.13.4a13.99 13.99 0 0 0-.54 2.95h3.37c-.19-2.66-1.1-4.85-1.63-5H16zm2.78.69.02.05c.48 1.19.8 2.68.9 4.26h2.21A6.02 6.02 0 0 0 19 8.8l-.22-.12z"></path></svg>
+                    <div class="card-info2">
+                        <h5>Hablo</h5>
+                        <h6>Español e Inglés</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="m5.7 1.3 3 3-.66.72a12 12 0 0 0 16.95 16.94l.72-.67 3 3-1.42 1.42-1.67-1.68A13.94 13.94 0 0 1 18 26.96V29h3v2h-8v-2h3v-2.04a13.95 13.95 0 0 1-8.92-4.08 14 14 0 0 1-1.11-18.5L4.29 2.71zm18.18 4.44.21.21.21.22a10 10 0 1 1-.64-.63zm-9.34 11.13-2.45 2.45a8 8 0 0 0 8.04 1.05 16.7 16.7 0 0 1-5.59-3.5zm4.91-4.91-3.5 3.5c2.85 2.54 6.08 3.82 6.7 3.2.63-.61-.66-3.85-3.2-6.7zm-9.81-2.1-.08.19a8 8 0 0 0 1.12 7.86l2.45-2.45a16.68 16.68 0 0 1-3.5-5.6zM23.32 8.1l-2.45 2.44a16.73 16.73 0 0 1 3.5 5.6 8 8 0 0 0-1.05-8.05zm-11.98-.76c-.62.62.66 3.86 3.2 6.7l3.5-3.5c-2.85-2.54-6.07-3.82-6.7-3.2zm2.54-1.7c1.75.59 3.75 1.83 5.58 3.49l2.44-2.45a8.03 8.03 0 0 0-8.02-1.04z"></path></svg>
+                    <div class="card-info2">
+                        <h5>Servicio Online</h5>
+                        <h6>México</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="M16.84 27.16v-3.4l-.26.09c-.98.32-2.03.51-3.11.55h-.7A11.34 11.34 0 0 1 1.72 13.36v-.59A11.34 11.34 0 0 1 12.77 1.72h.59c6.03.16 10.89 5.02 11.04 11.05V13.45a11.3 11.3 0 0 1-.9 4.04l-.13.3 7.91 7.9v5.6H25.7l-4.13-4.13zM10.31 7.22a3.1 3.1 0 1 1 0 6.19 3.1 3.1 0 0 1 0-6.2zm0 2.06a1.03 1.03 0 1 0 0 2.06 1.03 1.03 0 0 0 0-2.06zM22.43 25.1l4.12 4.13h2.67v-2.67l-8.37-8.37.37-.68.16-.3c.56-1.15.9-2.42.96-3.77v-.64a9.28 9.28 0 0 0-9-9h-.55a9.28 9.28 0 0 0-9 9v.54a9.28 9.28 0 0 0 13.3 8.1l.3-.16 1.52-.8v4.62z"></path></svg>
+                    <div class="card-info2">
+                        <h5>Servicio Presencial</h5>
+                        <h6>Guadalajara y Zapopan</h6>
+                    </div>
+                </div>
+
+                <div class="aboutme-card2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"><path d="m16 .8.56.37C20.4 3.73 24.2 5 28 5h1v12.5C29 25.57 23.21 31 16 31S3 25.57 3 17.5V5h1c3.8 0 7.6-1.27 11.45-3.83L16 .8zm0 2.4-.34.2a22.58 22.58 0 0 1-10.3 3.55L5 6.97V17.5C5 24.33 9.72 28.86 15.71 29H16c6.13 0 11-4.56 11-11.5V6.97l-.35-.02a22.58 22.58 0 0 1-10.31-3.54L16 3.19zm7 7.39L24.41 12 13.5 22.91 7.59 17 9 15.59l4.5 4.5 9.5-9.5z"></path></svg>
+                    <div class="card-info2">
+                        <a href="https://www.airbnb.mx/users/show/399965323">Identidad Verficada</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq-section">
+            
+            <h3>Preguntas frecuentes</h3>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Qué son los Servicios Únicos y de Administración y Soporte?</button>
+                <div class="faq-answer">
+                    <div>
+                        <h6>Servicios Únicos</h6>
+                        <p>Son servicios sin seguimiento o de una sola vez, quiere decir que no incluyen administración ni soporte del anuncio en Airbnb.</p>
+                    </div>
+                    <div>
+                        <h6>Servicios de Administración y Soporte</h6>
+                        <p>Son servicios de seguimiento, quiere decir que incluyen administración y soporte del anuncio en Airbnb.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Qué incluye la Administración de Airbnb y cuál es el precio?</button>
+                <div class="faq-answer">
+                    <div>
+                        <h6>Incluye:</h6>
+                        <p>Creación y configuración del anuncio, configuración de precios y disponibilidad del calendario, gestión de solicitudes de reservación, comunicación con huéspedes, coordinación de limpieza y asesoría fiscal para la incorporación en el régimen de ingresos por plataformas digitales.</p>
+                    </div>
+                    <div>
+                        <h6>Precio:</h6>
+                        <p>Si ya tienes fotos es un porcentaje por reserva confirmada del 20%, si no tienes fotos puede ser un porcentaje del 25% para incluir el servicio de fotografía o un solo pago de $1,500 MXN</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Incluye el servicio de limpieza o solo la coordinación?</button>
+                <div class="faq-answer">
+                <p>Solo la coordinación con la persona o equipo de limpieza encargada del servicio en el alojamiento.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo es el soporte a los huéspedes?</button>
+                <div class="faq-answer">
+                    <div>
+                        <h6>¿De que trata la comunicación con los huéspedes?</h6>
+                        <p>Se trata de responder rápidamente todas las consultas, coordinar check-in/check-out y resolver cualquier situación durante la estancia, manteniéndote informado.</p>
+                    </div>
+                    <div>
+                        <h6>¿Qué pasa si un huésped tiene un problema durante su estancia?</h6>
+                        <p>Intervengo como primer contacto para resolverlo de inmediato. Solo se necesitaría involucrarte en casos específicos que neseciten de tu ayuda.</p>      
+                    </div>
+                    <div>
+                        <h6>¿Qué pasa si un huésped daña o roba parte del alojamiento?</h6>
+                        <p>Se envia una solicitud por el cobro de los daños o el robo, si el huésped no responde en 24 hrs la plataforma de Airbnb cubre el pago por los daños con su seguro de AirCover.</p>      
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Qué pasa con los impuestos y el SAT?</button>
+                <div class="faq-answer">
+                <p>Se hace el registro de los datos fiscales en el SAT y Airbnb, ya sea en Pagos definitivos por un impuesto menor y sin declaraciones hasta $300 mil pesos al año sin poder deducir o Pagos provisionales con declaraciones y deducciónes pero se necesita contador.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Dudas sobre Airbnb...</button>
+                <div class="faq-answer">
+                    <div>
+                        <h6>¿Mi alojamiento es adecuado para Airbnb?</h6>
+                        <p>A los huéspedes en Airbnb les interesan espacios de lo más variados: habitaciones, departamentos, casas, alojamientos vacacionales e incluso casas del árbol.</p>
+                    </div>
+                    <div>
+                        <h6>¿Tengo que hospedar de forma continua?</h6>
+                        <p>No, tú controlas tu calendario. Puedes ofrecer tu alojamiento una vez al año, algunos días al mes o con más frecuencia.</p>      
+                    </div>
+                    <div>
+                        <h6>¿Qué tarifas cobra Airbnb?</h6>
+                        <p>Crear un anuncio es gratis y Airbnb suele cobrar una tarifa de servicio del 3% del subtotal de la reservación una vez que recibes el dinero. En México, Airbnb puede recaudar y remitir automáticamente en tu nombre las tasas turísticas y los impuestos sobre las ventas.</p>      
+                    </div>
+                    <div>
+                        <h6>¿Puedo seguir teniendo control sobre mi cuenta de Airbnb?</h6>
+                        <p>Sí. Tú sigues siendo el anfitrión principal y puedes acceder a tu cuenta en todo momento. El coanfitrión actúa como apoyo y administrador delegado.</p>      
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo empezamos a trabajar?</button>
+                <div class="faq-answer">
+                <p>Envia un mensaje con los detalles de tu propiedad y lo que necesitas. Haré una evaluación gratuita y te presentaré una propuesta personalizada.</p>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-        <p>Contact: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        <section class="footer-links">
+            <div class="footer-links-div">
+                <h5>Airbnb Recursos</h5>
+                <a href="https://www.airbnb.mx/resources/hosting-homes/a/how-aircover-for-hosts-works-469" target="_blank">Aircover para anfitriones</a>
+                <a href="https://www.airbnb.mx/help/article/3218" target="_blank">Aircover para huéspedes</a>
+                <a href="https://www.airbnb.mx/host/homes" target="_blank">Estima tus ganancias en Airbnb</a>
+                <a href="https://www.airbnb.mx/resources/hosting-homes/a/prepare-your-space-656" target="_blank">Prepara tu alojamiento</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.airbnb.mx/users/show/399965323" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 373.1c-25.2-31.7-40.1-59.4-45-83.2-22.6-88 112.6-88 90.1 0-5.5 24.3-20.3 52-45 83.2zm138.2 73.2c-42.1 18.3-83.7-10.9-119.3-50.5 103.9-130.1 46.1-200-18.9-200-54.9 0-85.2 46.5-73.3 100.5 6.9 29.2 25.2 62.4 54.4 99.5-32.5 36.1-60.6 52.7-85.2 54.9-50 7.4-89.1-41.1-71.3-91.1 15.1-39.2 111.7-231.2 115.9-241.6 15.8-30.1 25.6-57.4 59.4-57.4 32.3 0 43.4 25.9 60.4 59.9 36 70.6 89.4 177.5 114.8 239.1 13.2 33.1-1.4 71.3-37 86.6zm47-136.1C280.3 35.9 273.1 32 224 32c-45.5 0-64.9 31.7-84.7 72.8C33.2 317.1 22.9 347.2 22 349.8-3.2 419.1 48.7 480 111.6 480c21.7 0 60.6-6.1 112.4-62.4 58.7 63.8 101.3 62.4 112.4 62.4 62.9 .1 114.9-60.9 89.6-130.2 0-3.9-16.8-38.9-16.8-39.6z"/></svg></a>
+                <a href="https://www.facebook.com/admihostmx" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m15.9700599 1c-8.26766469 0-14.9700599 6.70239521-14.9700599 14.9700599 0 7.0203593 4.83353293 12.9113772 11.3538922 14.5293413v-9.954491h-3.08682633v-4.5748503h3.08682633v-1.9712575c0-5.09520959 2.305988-7.45688623 7.3083832-7.45688623.948503 0 2.58503.18622754 3.2544911.37185629v4.14670654c-.3532934-.0371257-.9670659-.0556886-1.7293414-.0556886-2.454491 0-3.402994.9299401-3.402994 3.3473054v1.6179641h4.8898204l-.8401198 4.5748503h-4.0497006v10.2856287c7.4125749-.8952096 13.1562875-7.2065868 13.1562875-14.860479-.0005988-8.26766469-6.702994-14.9700599-14.9706587-14.9700599z"></path></svg></a>
+                <a href="https://www.instagram.com/admihostmx" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m9.78762432 1.10490642c-1.596.0753-2.6859.33-3.6387.7044-.9861.3843-1.8219.9-2.6535 1.7346s-1.3437 1.671-1.7253 2.6586c-.3693.9549-.6195 2.0457-.69 3.6426-.0705 1.59689998-.0861 2.11019998-.0783 6.18359998s.0258 4.584.1032 6.1842c.0762 1.5957.33 2.6853.7044 3.6384.3849.9861.9 1.8216 1.7349 2.6535s1.6707 1.3428 2.6607 1.725c.954.3687 2.0451.6201 3.6417.69 1.59659998.0699 2.11049998.0861 6.18269998.0783s4.5849-.0258 6.1848-.1017 2.6838-.3315 3.6372-.7041c.9861-.3858 1.8222-.9 2.6535-1.7352s1.3431-1.6722 1.7244-2.6604c.3696-.954.6207-2.0451.69-3.6405.0699-1.6011.0864-2.1123.0786-6.1851s-.0261-4.5834-.102-6.18299998c-.0759-1.5996-.33-2.6859-.7041-3.6396-.3855-.9861-.9-1.821-1.7346-2.6535s-1.6722-1.344-2.6601-1.7244c-.9546-.3693-2.0451-.621-3.6417-.69s-2.1105-.0867-6.1842-.0789-4.5837.0252-6.18359998.1032m.1752 27.11639998c-1.4625-.0636-2.2566-.3066-2.7858-.51-.7008-.27-1.2-.5964-1.7274-1.1187s-.8514-1.0233-1.125-1.7226c-.2055-.5292-.453-1.3224-.5214-2.7849-.0744-1.5807-.09-2.0553-.0987-6.06s.0066-4.4787.0759-6.05999998c.0624-1.4613.3069-2.2563.51-2.7852.27-.7017.5952-1.2 1.1187-1.7271s1.023-.8517 1.7229-1.1253c.5286-.2064 1.3218-.4518 2.7837-.5214 1.58189998-.075 2.05589998-.09 6.05999998-.0987s4.4793.0063 6.0618.0759c1.4613.0636 2.2566.3057 2.7849.51.7011.27 1.2.5943 1.7271 1.1187s.852 1.0221 1.1256 1.7235c.2067.5271.4521 1.32.5211 2.7828.0753 1.58189998.0924 2.05619998.0996 6.05999998s-.0069 4.4793-.0762 6.06c-.0639 1.4625-.3063 2.2569-.51 2.7867-.27.7005-.5955 1.2-1.1193 1.7268s-1.0227.8514-1.7229 1.125c-.528.2061-1.3221.4521-2.7828.5217-1.5819.0744-2.0559.09-6.0615.0987s-4.4781-.0075-6.05999998-.0759m12.22799748-20.23829998c.0012175.72808507.4409323 1.38373514 1.114083 1.66118326s1.4471512.12204713 1.9610409-.39373063.6664512-1.2903429.3865363-1.96247162c-.2799148-.67212872-.937173-1.10943617-1.6652577-1.10798463-.9938786.00199-1.7980584.80912438-1.7964025 1.80300362m-13.89301175 8.03189998c.00841427 4.254 3.46321425 7.6947 7.71631425 7.6866143 4.2531-.0081143 7.6962-3.4626143 7.6881143-7.7166143-.0081143-4.254-3.4638143-7.69559998-7.7175143-7.68721533-4.2537.00841535-7.69499998 3.46381533-7.68691425 7.71721533m2.70180425-.0054c-.0054522-2.761471 2.2287325-5.0045146 4.9902035-5.0099904 2.761471-.0054558 5.0045175 2.228726 5.009997 4.990197.0054593 2.761471-2.2287195 5.0045204-4.9901905 5.0100045-1.3261582.0027764-2.5990901-.5214481-3.5386825-1.4573271s-1.4688535-2.2067251-1.4713275-3.532884"></path></svg></a>
+                <a href="https://www.tiktok.com/admihostmx" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a>
+                <a href="https://wa.me/3326392314?text=Hola, estoy interesado en el servicio de Administración Airbnb" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+            </div>
+
+            <p class="footer-copyright">&copy; 2025 AdmiHost. Todos los derechos reservados.</p>
+
+        </section>
+        
     </footer>
 
     <!-- JS FILES --> 

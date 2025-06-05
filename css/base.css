@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth; /* activa scroll suave con anclas */
+}
+
 body {
     font-family: var(--font-main); /* Choose a good font */
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6; /* Improve readability */
     color: color: var(--color-font);
@@ -15,9 +19,41 @@ a {
   text-decoration: none; /* Remove link underline */
 }
 
-  
-h1, h2, h3 {
-    margin-bottom: 1rem; /* Space below headings */
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none; /* opcional: quita el contorno que aparece al hacer focus */
+}
+
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+h5{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h6{
+    font-size: 0.875rem;
+    font-weight: 500;
 }
   
 ul {

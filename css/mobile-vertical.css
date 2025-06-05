@@ -525,6 +525,15 @@
         border-radius: 8px;
     }
 
+    .list-cover{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Recorta sin estirar */
+        object-position: center;
+        display: block;
+}
+    }
+
     .list-img{
         width: 65dvw;
         aspect-ratio: 1;
@@ -535,20 +544,16 @@
         background-repeat: no-repeat;   /* Evita que la imagen se repita */
     }
 
-    .casaairelibre{
-        background-image: url("img/list/casaairelibre.webp");
-    }
-
     .depazonareal{
-        background-image: url("img/list/depazonareal.webp");
+        background-image: url("/img/list/depazonareal.webp");
     }
 
     .casapbvistacalifornia{
-        background-image: url("img/list/casapbvistacalifornia.webp");
+        background-image: url("/img/list/casapbvistacalifornia.webp");
     }
 
     .casapavistacalifornia{
-        background-image: url("img/list/casapavistacalifornia.webp");
+        background-image: url("/img/list/casapavistacalifornia.webp");
     }
 
     .list-type{
